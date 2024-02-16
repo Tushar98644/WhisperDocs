@@ -1,4 +1,4 @@
-import { auth, authMiddleware, redirectToSignIn } from "@clerk/nextjs";
+import { authMiddleware } from "@clerk/nextjs";
 import { NextRequest, NextResponse } from "next/server";
 
 export default authMiddleware({ 
