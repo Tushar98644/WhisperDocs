@@ -31,8 +31,8 @@ export const uploadToS3 = async (file: File) : Promise<{ file_key: string; file_
   } catch (e: any) {
     console.error(`There was an error uploading the file to S3: ${e}`);
     return {
-      file_name: "", // You might want to customize this based on your application logic
-      file_key: "",  // You might want to customize this based on your application logic
+      file_name: "", 
+      file_key: "",
     };
   }
 
