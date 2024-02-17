@@ -8,7 +8,8 @@ export const chats = pgTable('chats', {
     pdfUrl: text('pdfUrl').notNull(),
     createdAt: timestamp('createdAt').notNull().defaultNow(),
     userId : varchar('userId',{ 
-        length: 255    }).notNull()
+        length: 255    }).notNull(),
+    fileKey: text("file_key").notNull(),
 });
 
 export const messages = pgTable('messages', {   

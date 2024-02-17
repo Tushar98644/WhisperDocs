@@ -9,14 +9,16 @@ import md5 from "md5";
 import { getEmbeddings } from "./embeddings";
 import { convertToAscii } from "./utils";
 
-interface PdfPage {
-  pageContent: string;
-  metadata: {
-    loc: {
-      pageNumber: number;
-    };
-  };
-}
+// interface PdfPage {
+//   pageContent: string;
+//   metadata: {
+//     loc: {
+//       pageNumber: number;
+//     //   text: string;
+//     };
+//   };
+// }
+
 let PinceconeClient: Pinecone;
 
 export const getPinceconeClient = () => {
@@ -25,6 +27,7 @@ export const getPinceconeClient = () => {
       apiKey: process.env.PINECONE_API_KEY as string,
     });
   }
+  console.log("Pinecone client created", PinceconeClient);
   return PinceconeClient;
 };
 
@@ -35,21 +38,21 @@ export const uploads3toPinecone = async (file_key: string) => {
       throw new Error("File not found");
     }
     const loader = new PDFLoader(file_path);
-    const pages = (await loader.load()) as PdfPage[];
+    const pages = await loader.load();
 
-    // 2. split and segment the pdf
-  const documents = await Promise.all(pages.map(prepareDocument));
+    const documents = await Promise.all(pages.map(prepareDocument));
 
-  // 3. vectorise and embed individual documents
-  const vectors = await Promise.all(documents.flat().map(embedDocument));
-  const client = getPinceconeClient();
-  const pineconeIndex = client.index('whisper-docs');
-  const namespace = pineconeIndex.namespace(convertToAscii(file_key));
+    const vectors = await Promise.all(documents.flat().map(embedDocument));
+    const client = getPinceconeClient();
+    console.log(await client.describeIndex("whisper-docs"));
+    const pineconeIndex = client.index("whisper-docs");
+    const namespace = pineconeIndex.namespace(convertToAscii(file_key));
 
-  console.log("inserting vectors into pinecone");
-  await namespace.upsert(vectors);
+    console.log("inserting vectors into pinecone...");
+    await namespace.upsert(vectors);
+    console.log("inserted vectors into pinecone");
 
-  return documents[0];
+    return documents[0];
   } catch (e) {
     console.log(`There was an error uploading the file to Pinecone: ${e}`);
   }
@@ -57,6 +60,7 @@ export const uploads3toPinecone = async (file_key: string) => {
 
 const embedDocument = async (doc: Document) => {
   try {
+    console.log("All the docs are ", doc);
     const embeddings = await getEmbeddings(doc.pageContent);
     const hash = md5(doc.pageContent);
 
@@ -79,7 +83,7 @@ const truncateStringByBytes = (str: string, bytes: number) => {
   return new TextDecoder("utf-8").decode(enc.encode(str).slice(0, bytes));
 };
 
-const prepareDocument = async (page: PdfPage) => {
+const prepareDocument = async (page) => {
   let { pageContent, metadata } = page;
   pageContent = pageContent.replace(/\n/g, "");
   // split the docs

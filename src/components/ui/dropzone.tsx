@@ -5,8 +5,10 @@ import { uploadToS3 } from "@/lib/s3-config";
 import { useMutation } from "react-query";
 import axios from "axios";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Dropzone = () => {
+    const router = useRouter();
     const [uploading, setuploading] = useState(false);
     const { mutate, isLoading } = useMutation({
         mutationFn: async ({ file_name, file_key }: { file_name: string, file_key: string }) => {
@@ -14,6 +16,7 @@ const Dropzone = () => {
                 file_name,
                 file_key
             })
+
             return response.data;
         }
     })
@@ -41,6 +44,7 @@ const Dropzone = () => {
                 mutate(data, {
                     onSuccess: (data) => {
                         console.log(data);
+                        router.push(`/chat/${data.chat_id}`); 
                     },
                     onError: (error) => {
                         console.log(error);
