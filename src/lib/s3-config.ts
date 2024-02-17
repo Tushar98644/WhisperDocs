@@ -9,10 +9,9 @@ const s3Client = new S3Client({
   },
 });
 
-export const uploadToS3 = async (file: any) => {
+export const uploadToS3 = async (file: File) : Promise<{ file_key: string; file_name: string }>   => {
   try {
-    const file_key =
-      "uploads/" + Date.now().toString() + file.name.replace("", "_");
+    const file_key = "uploads/" + Date.now().toString() + file.name.replace("", "_");
     const params = {
       Bucket: process.env.NEXT_PUBLIC_AWS_BUCKET_NAME,
       Key: file_key,
@@ -24,9 +23,19 @@ export const uploadToS3 = async (file: any) => {
     const upload = await s3Client.send(command);
 
     console.log("upload success", upload);
+
+    return  {
+      file_name: file.name,
+      file_key,
+    };
   } catch (e: any) {
     console.error(`There was an error uploading the file to S3: ${e}`);
+    return {
+      file_name: "", // You might want to customize this based on your application logic
+      file_key: "",  // You might want to customize this based on your application logic
+    };
   }
+
 };
 
 export const getS3Url = (file_key: any) => {
