@@ -18,7 +18,6 @@ const Dropzone = () => {
         }
     })
 
-
     const { getInputProps, getRootProps } = useDropzone({
         accept: {
             "application/pdf": [".pdf"],

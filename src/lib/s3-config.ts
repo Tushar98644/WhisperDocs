@@ -1,17 +1,24 @@
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import {
+  S3Client,
+  PutObjectCommand,
+} from "@aws-sdk/client-s3";
 
 // @ts-ignore
-const s3Client = new S3Client({
+export const s3Client = new S3Client({
   region: process.env.NEXT_PUBLIC_AWS_REGION,
-  credentials: {    
+  credentials: {
     accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY,
   },
 });
 
-export const uploadToS3 = async (file: File) : Promise<{ file_key: string; file_name: string }>   => {
+export const uploadToS3 = async (
+  file: File
+): Promise<{ file_key: string; file_name: string }> => {
+  return new Promise(async (resolve, reject) => {
   try {
-    const file_key = "uploads/" + Date.now().toString() + file.name.replace("", "_");
+    const file_key =
+      "uploads/" + Date.now().toString() + file.name.replace("", "_");
     const params = {
       Bucket: process.env.NEXT_PUBLIC_AWS_BUCKET_NAME,
       Key: file_key,
@@ -24,18 +31,15 @@ export const uploadToS3 = async (file: File) : Promise<{ file_key: string; file_
 
     console.log("upload success", upload);
 
-    return  {
+    return resolve( {
       file_name: file.name,
       file_key,
-    };
+    });
   } catch (e: any) {
     console.error(`There was an error uploading the file to S3: ${e}`);
-    return {
-      file_name: "", 
-      file_key: "",
-    };
+    reject(e);
   }
-
+  })
 };
 
 export const getS3Url = (file_key: any) => {
