@@ -9,15 +9,15 @@ import md5 from "md5";
 import { getEmbeddings } from "./embeddings";
 import { convertToAscii } from "./utils";
 
-// interface PdfPage {
-//   pageContent: string;
-//   metadata: {
-//     loc: {
-//       pageNumber: number;
-//     //   text: string;
-//     };
-//   };
-// }
+interface PdfPage {
+  pageContent: string;
+  metadata: {
+    loc: {
+      pageNumber: number;
+    //   text: string;
+    };
+  };
+}
 
 let PinceconeClient: Pinecone;
 
@@ -38,7 +38,7 @@ export const uploads3toPinecone = async (file_key: string) => {
       throw new Error("File not found");
     }
     const loader = new PDFLoader(file_path);
-    const pages = await loader.load();
+    const pages = (await loader.load()) as PdfPage[];
 
     const documents = await Promise.all(pages.map(prepareDocument));
 
@@ -83,7 +83,7 @@ const truncateStringByBytes = (str: string, bytes: number) => {
   return new TextDecoder("utf-8").decode(enc.encode(str).slice(0, bytes));
 };
 
-const prepareDocument = async (page) => {
+const prepareDocument = async (page:PdfPage) => {
   let { pageContent, metadata } = page;
   pageContent = pageContent.replace(/\n/g, "");
   // split the docs
