@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "Tushar98644"
+    labels:
+      - "pnpm"
+      - "dependencies"
+      - "dependabot"
+    target-branch: "main"

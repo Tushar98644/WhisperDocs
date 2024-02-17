@@ -6,6 +6,7 @@ specifiers:
   '@aws-sdk/credential-providers': ^3.515.0
   '@clerk/nextjs': ^4.29.5
   '@neondatabase/serverless': ^0.7.2
+  '@pinecone-database/doc-splitter': ^0.0.1
   '@pinecone-database/pinecone': ^2.0.1
   '@radix-ui/react-slot': ^1.0.2
   '@types/node': ^20
@@ -44,6 +45,7 @@ dependencies:
   '@aws-sdk/credential-providers': 3.515.0
   '@clerk/nextjs': 4.29.5_hipqgvz32dfk24avoqah5l7veq
   '@neondatabase/serverless': 0.7.2
+  '@pinecone-database/doc-splitter': 0.0.1
   '@pinecone-database/pinecone': 2.0.1
   '@radix-ui/react-slot': 1.0.2_qqvacn34z7knifokimedy337fa
   aws-sdk: 2.1559.0
@@ -1885,6 +1887,11 @@ packages:
       pvtsutils: 1.3.5
       tslib: 2.6.2
       webcrypto-core: 1.7.8
+    dev: false
+
+  /@pinecone-database/doc-splitter/0.0.1:
+    resolution: {integrity: sha512-UCJgNZKnXPcrTblI9ui6H+HbQbyYf8bsGQAGR3f4IYW2Lw1zQ0izFrjGsCgqiP+GE837JXv43+qgkSqwWlnZtA==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@pinecone-database/pinecone/2.0.1:
