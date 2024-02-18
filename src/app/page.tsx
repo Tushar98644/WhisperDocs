@@ -4,7 +4,7 @@ import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen flex items-center justify-center bg-black">
+    <div className="h-screen w-screen flex items-center justify-center ">
       <Dropzone />
       <Button asChild variant="secondary">
         <UserButton afterSignOutUrl="/login" />

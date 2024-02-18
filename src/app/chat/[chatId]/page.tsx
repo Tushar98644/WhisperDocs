@@ -1,7 +1,12 @@
+import ChatWindow from "@/components/chat_window/chat_window";
+import Sidebar from "@/components/sidebar/sidebar";
+import { Fragment } from "react";
+
 const ChatPage = () => {
     return ( 
-        <div>
-            <h1>Chat Page</h1>
+        <div className="grid grid-cols-4">
+              <Sidebar />
+              <ChatWindow />
         </div>
      );
 }
