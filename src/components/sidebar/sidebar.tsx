@@ -1,21 +1,23 @@
 import { Home, Settings } from "lucide-react";
-import { Icon } from "next/dist/lib/metadata/types/metadata-types";
+import Link from "next/link";
 
 interface ListItem {
     icon: any;
     text: string;
 }
+
 const ListItem = ({ icon, text } : ListItem) => {
+    const route_text = text.toLowerCase();
     return (
-        <li className="flex flex-row gap-2">
+        <Link href={route_text} className="flex flex-row gap-2 hover:bg-black mx-6 p-2 rounded-[0.4vw]">
             {icon}
             <p>{text}</p>
-        </li>
+        </Link>
     );
 }
 const Sidebar = () => {
     return (
-        <div className="h-screen bg-red flex flex-col gap-4 col-span-1">
+        <div className="h-screen bg-red flex flex-col gap-4 w-1/5">
             <p>Whisper Docs</p>
             <ul>
                 <ListItem icon={<Home />} text="Home" />

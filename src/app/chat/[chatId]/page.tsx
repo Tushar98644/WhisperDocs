@@ -4,7 +4,7 @@ import { Fragment } from "react";
 
 const ChatPage = () => {
     return ( 
-        <div className="grid grid-cols-4">
+        <div className="flex flex-row">
               <Sidebar />
               <ChatWindow />
         </div>
