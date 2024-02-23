@@ -57,8 +57,8 @@ dependencies:
     specifier: ^11.0.3
     version: 11.0.5(react-dom@18.2.0)(react@18.2.0)
   langchain:
-    specifier: ^0.1.20
-    version: 0.1.20(@aws-sdk/client-s3@3.515.0)(@aws-sdk/credential-provider-node@3.515.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
+    specifier: ^0.1.21
+    version: 0.1.21(@aws-sdk/client-s3@3.515.0)(@aws-sdk/credential-provider-node@3.515.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
     specifier: ^0.336.0
     version: 0.336.0(react@18.2.0)
@@ -1499,8 +1499,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@langchain/community@0.0.30(@aws-sdk/credential-provider-node@3.515.0)(@pinecone-database/pinecone@2.0.1)(pg@8.11.3):
-    resolution: {integrity: sha512-duYJtC8wN8FeIBkijGmDcOPpcK6dPU3Uwamh9K3ASuM97AUI2gEzZJeVtUPQiWFRPyDOAlPfNtrqxVUy2kmp9g==}
+  /@langchain/community@0.0.32(@aws-sdk/credential-provider-node@3.515.0)(@pinecone-database/pinecone@2.0.1)(pg@8.11.3):
+    resolution: {integrity: sha512-jN4BxGKAmLbA87hqXH5Mx1IRMMVOgcn1TY1MLOVyBcBa12EvHFx8suogtXgA2ekfc8U8nIryVb1ftSupwUBv/A==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-crypto/sha256-js': ^5.0.0
@@ -1569,7 +1569,7 @@ packages:
       llmonitor: ^0.5.9
       lodash: ^4.17.21
       lunary: ^0.6.11
-      mongodb: ^5.2.0
+      mongodb: '>=5.2.0'
       mysql2: ^3.3.3
       neo4j-driver: '*'
       node-llama-cpp: '*'
@@ -1758,7 +1758,7 @@ packages:
         optional: true
     dependencies:
       '@aws-sdk/credential-provider-node': 3.515.0
-      '@langchain/core': 0.1.30
+      '@langchain/core': 0.1.32
       '@langchain/openai': 0.0.14
       '@pinecone-database/pinecone': 2.0.1
       flat: 5.0.2
@@ -1770,8 +1770,8 @@ packages:
       - encoding
     dev: false
 
-  /@langchain/core@0.1.30:
-    resolution: {integrity: sha512-3oqEKgwe7U/efieZrCC6BLwOHm4YPj27mRNBZLaB5BwPh3a7gXIevxEnbjN3o5j9kJqc5acG7nn35h7Wkrf2Ag==}
+  /@langchain/core@0.1.32:
+    resolution: {integrity: sha512-7b8wBQMej2QxaDDS0fCQa3/zrA2raTh1RBe2h1som7QxFpWJkHSxwVwdvGUotX9SopmsY99TK54sK0amfDvBBA==}
     engines: {node: '>=18'}
     dependencies:
       ansi-styles: 5.2.0
@@ -1791,7 +1791,7 @@ packages:
     resolution: {integrity: sha512-co6nRylPrLGY/C3JYxhHt6cxLq07P086O7K3QaZH7SFFErIN9wSzJonpvhZR07DEUq6eK6wKgh2ORxA/NcjSRQ==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.1.30
+      '@langchain/core': 0.1.32
       js-tiktoken: 1.0.10
       openai: 4.28.0
       zod: 3.22.4
@@ -4922,8 +4922,8 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.20(@aws-sdk/client-s3@3.515.0)(@aws-sdk/credential-provider-node@3.515.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
-    resolution: {integrity: sha512-NaO4Ovbwb0EHqyo83Wg7TKQE7tV1WGvnGdncpMiazBL9Qgv+vYpDpOV66C64M2C/4fYrNJV/BKDljjFhSE8PSw==}
+  /langchain@0.1.21(@aws-sdk/client-s3@3.515.0)(@aws-sdk/credential-provider-node@3.515.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
+    resolution: {integrity: sha512-OOcCFIgx23WyyNS1VJBLbC3QL5plQBVfp2drXw1OJAarZ8yEY3cgJq8NbTY37sMnLoJ2olFEzMuAOdlTur4cwQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.310.0
@@ -4959,7 +4959,7 @@ packages:
       ioredis: ^5.3.2
       jsdom: '*'
       mammoth: ^1.6.0
-      mongodb: ^5.2.0
+      mongodb: '>=5.2.0'
       node-llama-cpp: '*'
       notion-to-md: ^3.1.0
       officeparser: ^4.0.4
@@ -4972,8 +4972,7 @@ packages:
       sonix-speech-recognition: ^2.1.1
       srt-parser-2: ^1.2.3
       typeorm: ^0.3.12
-      vectordb: ^0.1.4
-      weaviate-ts-client: ^1.4.0
+      weaviate-ts-client: '*'
       web-auth-library: ^1.0.3
       ws: ^8.14.2
       youtube-transcript: ^1.0.6
@@ -5071,8 +5070,6 @@ packages:
         optional: true
       typeorm:
         optional: true
-      vectordb:
-        optional: true
       weaviate-ts-client:
         optional: true
       web-auth-library:
@@ -5087,8 +5084,8 @@ packages:
       '@anthropic-ai/sdk': 0.9.1
       '@aws-sdk/client-s3': 3.515.0
       '@aws-sdk/credential-provider-node': 3.515.0
-      '@langchain/community': 0.0.30(@aws-sdk/credential-provider-node@3.515.0)(@pinecone-database/pinecone@2.0.1)(pg@8.11.3)
-      '@langchain/core': 0.1.30
+      '@langchain/community': 0.0.32(@aws-sdk/credential-provider-node@3.515.0)(@pinecone-database/pinecone@2.0.1)(pg@8.11.3)
+      '@langchain/core': 0.1.32
       '@langchain/openai': 0.0.14
       '@pinecone-database/pinecone': 2.0.1
       axios: 1.6.7
@@ -5167,6 +5164,7 @@ packages:
       - replicate
       - typesense
       - usearch
+      - vectordb
       - voy-search
     dev: false
 
