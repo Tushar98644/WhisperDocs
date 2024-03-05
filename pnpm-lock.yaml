@@ -57,8 +57,8 @@ dependencies:
     specifier: ^11.0.8
     version: 11.0.8(react-dom@18.2.0)(react@18.2.0)
   langchain:
-    specifier: ^0.1.24
-    version: 0.1.24(@aws-sdk/client-s3@3.525.0)(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
+    specifier: ^0.1.25
+    version: 0.1.25(@aws-sdk/client-s3@3.525.0)(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
     specifier: ^0.344.0
     version: 0.344.0(react@18.2.0)
@@ -4933,8 +4933,8 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.24(@aws-sdk/client-s3@3.525.0)(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
-    resolution: {integrity: sha512-awVjr8ZepD2YWxDB5YDjrmFjgPiBfKCO0gzcyU1YruQXjNZ5i84wUZ1bAiwyzR2BgxdWpRh81A5I7ofSNTgXUw==}
+  /langchain@0.1.25(@aws-sdk/client-s3@3.525.0)(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
+    resolution: {integrity: sha512-sfEChvr4H2CklHdSByNBbytwBrFhgtA5kPOnwcBrxuXGg1iOaTzhVxQA0QcNcQucI3hZrsNbZjxGp+Can1ooZQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.310.0
@@ -4987,7 +4987,7 @@ packages:
       web-auth-library: ^1.0.3
       ws: ^8.14.2
       youtube-transcript: ^1.0.6
-      youtubei.js: ^5.8.0
+      youtubei.js: ^9.1.0
     peerDependenciesMeta:
       '@aws-sdk/client-s3':
         optional: true
