@@ -24,8 +24,8 @@ dependencies:
     specifier: ^0.0.1
     version: 0.0.1
   '@pinecone-database/pinecone':
-    specifier: ^2.0.1
-    version: 2.0.1
+    specifier: ^2.1.0
+    version: 2.1.0
   '@radix-ui/react-slot':
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.2.64)(react@18.2.0)
@@ -58,7 +58,7 @@ dependencies:
     version: 11.0.8(react-dom@18.2.0)(react@18.2.0)
   langchain:
     specifier: ^0.1.25
-    version: 0.1.25(@aws-sdk/client-s3@3.525.0)(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
+    version: 0.1.25(@aws-sdk/client-s3@3.525.0)(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
     specifier: ^0.344.0
     version: 0.344.0(react@18.2.0)
@@ -1499,7 +1499,7 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@langchain/community@0.0.33(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.0.1)(pg@8.11.3):
+  /@langchain/community@0.0.33(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3):
     resolution: {integrity: sha512-m7KfOB2t/6ZQkx29FcqHeOe+jxQZDJdRqpMsCAxRebCaIUiAwNJgRqqukQOcDsG574jhEyEMYuYDfImfXSY7aw==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -1760,7 +1760,7 @@ packages:
       '@aws-sdk/credential-provider-node': 3.525.0
       '@langchain/core': 0.1.39
       '@langchain/openai': 0.0.14
-      '@pinecone-database/pinecone': 2.0.1
+      '@pinecone-database/pinecone': 2.1.0
       flat: 5.0.2
       langsmith: 0.1.8
       pg: 8.11.3
@@ -1946,8 +1946,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: false
 
-  /@pinecone-database/pinecone@2.0.1:
-    resolution: {integrity: sha512-a1ejzrqdSQ2yW+9QUi2TVlKwYUbrvGH+QH6POJhITyaOz9ANE+EhXqToC9af93Ctzq9n87+bOUvBvewLeW++Mw==}
+  /@pinecone-database/pinecone@2.1.0:
+    resolution: {integrity: sha512-sbU5+FZ2yhG+tJYwEochoZei5988OLWZyM2aT4wenWc6sbKGV69Jm9Yl4yix10NNglzfksF9avkte1a0/k7x5Q==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@sinclair/typebox': 0.29.6
@@ -4934,7 +4934,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.25(@aws-sdk/client-s3@3.525.0)(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.0.1)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
+  /langchain@0.1.25(@aws-sdk/client-s3@3.525.0)(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
     resolution: {integrity: sha512-sfEChvr4H2CklHdSByNBbytwBrFhgtA5kPOnwcBrxuXGg1iOaTzhVxQA0QcNcQucI3hZrsNbZjxGp+Can1ooZQ==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5096,10 +5096,10 @@ packages:
       '@anthropic-ai/sdk': 0.9.1
       '@aws-sdk/client-s3': 3.525.0
       '@aws-sdk/credential-provider-node': 3.525.0
-      '@langchain/community': 0.0.33(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.0.1)(pg@8.11.3)
+      '@langchain/community': 0.0.33(@aws-sdk/credential-provider-node@3.525.0)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3)
       '@langchain/core': 0.1.39
       '@langchain/openai': 0.0.14
-      '@pinecone-database/pinecone': 2.0.1
+      '@pinecone-database/pinecone': 2.1.0
       axios: 1.6.7
       binary-extensions: 2.2.0
       expr-eval: 2.0.2
