@@ -60,8 +60,8 @@ dependencies:
     specifier: ^0.1.25
     version: 0.1.25(@aws-sdk/client-s3@3.529.1)(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
-    specifier: ^0.350.0
-    version: 0.350.0(react@18.2.0)
+    specifier: ^0.354.0
+    version: 0.354.0(react@18.2.0)
   md5:
     specifier: ^2.3.0
     version: 2.3.0
@@ -5678,8 +5678,8 @@ packages:
       es5-ext: 0.10.63
     dev: false
 
-  /lucide-react@0.350.0(react@18.2.0):
-    resolution: {integrity: sha512-5IZVKsxxG8Nn81gpsz4XLNgCAXkppCh0Y0P0GLO39h5iVD2WEaB9of6cPkLtzys1GuSfxJxmwsDh487y7LAf/g==}
+  /lucide-react@0.354.0(react@18.2.0):
+    resolution: {integrity: sha512-qI0x/hhcuHieaUUxFejesm5T/ditszQ2x1gUkqKnTMZRAOdxT2nGzbOFYrhc0wRjuA2MN1o5JCrcRPYcHH3l8A==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
