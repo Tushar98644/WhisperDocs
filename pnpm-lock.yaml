@@ -57,8 +57,8 @@ dependencies:
     specifier: ^11.0.8
     version: 11.0.8(react-dom@18.2.0)(react@18.2.0)
   langchain:
-    specifier: ^0.1.25
-    version: 0.1.25(@aws-sdk/client-s3@3.529.1)(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
+    specifier: ^0.1.26
+    version: 0.1.26(@aws-sdk/client-s3@3.529.1)(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
     specifier: ^0.354.0
     version: 0.354.0(react@18.2.0)
@@ -1741,8 +1741,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@langchain/community@0.0.33(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3):
-    resolution: {integrity: sha512-m7KfOB2t/6ZQkx29FcqHeOe+jxQZDJdRqpMsCAxRebCaIUiAwNJgRqqukQOcDsG574jhEyEMYuYDfImfXSY7aw==}
+  /@langchain/community@0.0.36(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3):
+    resolution: {integrity: sha512-4OOKH6F9orGZZHgbvYvekMV6JesL89JC3cmJxNvAr5x7vr7wNNa4fuLq+H7Ew8tnsQOYZk+K57UMYkcwVuwySA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-crypto/sha256-js': ^5.0.0
@@ -2000,8 +2000,8 @@ packages:
         optional: true
     dependencies:
       '@aws-sdk/credential-provider-node': 3.529.1
-      '@langchain/core': 0.1.39
-      '@langchain/openai': 0.0.14
+      '@langchain/core': 0.1.44
+      '@langchain/openai': 0.0.19
       '@pinecone-database/pinecone': 2.1.0
       flat: 5.0.2
       langsmith: 0.1.8
@@ -2012,8 +2012,8 @@ packages:
       - encoding
     dev: false
 
-  /@langchain/core@0.1.39:
-    resolution: {integrity: sha512-bhsMOSLPkWbVZuE3uPd9dgiOeqFwexU7IGfjWht+mWrAW9spuBtAOKOcrmxK3v5TYaKpoDbIiH641FobyD947g==}
+  /@langchain/core@0.1.44:
+    resolution: {integrity: sha512-6kzRRf8X1TgkAfc8xOZ1qCHalasPDxdcNLnL++ZCGtWLyiKMFP7HcDwG/UewYsbqQd3sTQUPiP9+PHdPWXHd/Q==}
     engines: {node: '>=18'}
     dependencies:
       ansi-styles: 5.2.0
@@ -2029,11 +2029,11 @@ packages:
       zod-to-json-schema: 3.22.4(zod@3.22.4)
     dev: false
 
-  /@langchain/openai@0.0.14:
-    resolution: {integrity: sha512-co6nRylPrLGY/C3JYxhHt6cxLq07P086O7K3QaZH7SFFErIN9wSzJonpvhZR07DEUq6eK6wKgh2ORxA/NcjSRQ==}
+  /@langchain/openai@0.0.19:
+    resolution: {integrity: sha512-b1CHZCNVc2u4LZbFc1Ls0T7U4LWNGvMeQsrNidLZT5jbjg6VzzDZuVCDPGqCwUc8bzFWvPBO52oT1Wy+aCOX6w==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.1.39
+      '@langchain/core': 0.1.44
       js-tiktoken: 1.0.10
       openai: 4.28.0
       zod: 3.22.4
@@ -5179,8 +5179,8 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.25(@aws-sdk/client-s3@3.529.1)(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
-    resolution: {integrity: sha512-sfEChvr4H2CklHdSByNBbytwBrFhgtA5kPOnwcBrxuXGg1iOaTzhVxQA0QcNcQucI3hZrsNbZjxGp+Can1ooZQ==}
+  /langchain@0.1.26(@aws-sdk/client-s3@3.529.1)(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
+    resolution: {integrity: sha512-2hCXDev/KkBKNHCrxqq7XQxAp/kpjMtwlIuKBzaSW8gM+BOrh8q6B9PM3ItbvG4s29JCW7xlJtIEO3LaWChwkQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.310.0
@@ -5208,7 +5208,7 @@ packages:
       d3-dsv: ^2.0.0
       epub2: ^3.0.1
       faiss-node: '*'
-      fast-xml-parser: ^4.2.7
+      fast-xml-parser: '*'
       google-auth-library: ^8.9.0
       handlebars: ^4.7.8
       html-to-text: ^9.0.5
@@ -5341,9 +5341,9 @@ packages:
       '@anthropic-ai/sdk': 0.9.1
       '@aws-sdk/client-s3': 3.529.1
       '@aws-sdk/credential-provider-node': 3.529.1
-      '@langchain/community': 0.0.33(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3)
-      '@langchain/core': 0.1.39
-      '@langchain/openai': 0.0.14
+      '@langchain/community': 0.0.36(@aws-sdk/credential-provider-node@3.529.1)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3)
+      '@langchain/core': 0.1.44
+      '@langchain/openai': 0.0.19
       '@pinecone-database/pinecone': 2.1.0
       axios: 1.6.7
       binary-extensions: 2.2.0
