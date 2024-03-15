@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@aws-sdk/client-s3':
-    specifier: ^3.533.0
-    version: 3.533.0
+    specifier: ^3.534.0
+    version: 3.534.0
   '@aws-sdk/credential-provider-ini':
     specifier: ^3.533.0
     version: 3.533.0(@aws-sdk/credential-provider-node@3.533.0)
@@ -58,7 +58,7 @@ dependencies:
     version: 11.0.12(react-dom@18.2.0)(react@18.2.0)
   langchain:
     specifier: ^0.1.27
-    version: 0.1.27(@aws-sdk/client-s3@3.533.0)(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
+    version: 0.1.27(@aws-sdk/client-s3@3.534.0)(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
     specifier: ^0.357.0
     version: 0.357.0(react@18.2.0)
@@ -275,8 +275,8 @@ packages:
       - aws-crt
     dev: false
 
-  /@aws-sdk/client-s3@3.533.0:
-    resolution: {integrity: sha512-KkzRS3Dt+dmNBe0a627RGr5aFqI+xw5UhqB+8Gr4r6Xy1/8sMGE+AXKVl/sYVbRQo/9aSCBak71baGE3XCm/pQ==}
+  /@aws-sdk/client-s3@3.534.0:
+    resolution: {integrity: sha512-ulu0M9kj9KVXBluAfFPL4Bm/b7VReH4mu/kC45A4lai0zBRHtBsr274vOBaLESGcV6wiMNPU18Xb+oxV91DTcw==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-crypto/sha1-browser': 3.0.0
@@ -293,7 +293,7 @@ packages:
       '@aws-sdk/middleware-logger': 3.533.0
       '@aws-sdk/middleware-recursion-detection': 3.533.0
       '@aws-sdk/middleware-sdk-s3': 3.533.0
-      '@aws-sdk/middleware-signing': 3.533.0
+      '@aws-sdk/middleware-signing': 3.534.0
       '@aws-sdk/middleware-ssec': 3.533.0
       '@aws-sdk/middleware-user-agent': 3.533.0
       '@aws-sdk/region-config-resolver': 3.533.0
@@ -731,8 +731,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@aws-sdk/middleware-signing@3.533.0:
-    resolution: {integrity: sha512-qJZBoNKoSacIkHZfHcQfxmrogQcb0OPEaeEwwH563f8D5qYjQ3yuSaq7X9BKL7W8f9GjUYUJYZJwK3tbDh1ccg==}
+  /@aws-sdk/middleware-signing@3.534.0:
+    resolution: {integrity: sha512-TUjCjK6o8TZ5w4NEllGtGFaq4kVet0ysoocnjMoOqBUTKBSYLwRe6bkrd5rF+onJj0fMIazGz6vaQyy/0iRNjQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-sdk/types': 3.533.0
@@ -4924,7 +4924,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.27(@aws-sdk/client-s3@3.533.0)(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
+  /langchain@0.1.27(@aws-sdk/client-s3@3.534.0)(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
     resolution: {integrity: sha512-MqbfDqM9geSTBWkTBBRWga9TFmFSldJpFeDOLBA17xSIcqxjHKc95rq5R5eq0vJARAcJMObMLhRrzeaWA9ROPQ==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5084,7 +5084,7 @@ packages:
         optional: true
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
-      '@aws-sdk/client-s3': 3.533.0
+      '@aws-sdk/client-s3': 3.534.0
       '@aws-sdk/credential-provider-node': 3.533.0
       '@langchain/community': 0.0.36(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3)
       '@langchain/core': 0.1.44
