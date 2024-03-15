@@ -57,8 +57,8 @@ dependencies:
     specifier: ^11.0.12
     version: 11.0.12(react-dom@18.2.0)(react@18.2.0)
   langchain:
-    specifier: ^0.1.27
-    version: 0.1.27(@aws-sdk/client-s3@3.534.0)(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
+    specifier: ^0.1.28
+    version: 0.1.28(@aws-sdk/client-s3@3.534.0)(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
     specifier: ^0.357.0
     version: 0.357.0(react@18.2.0)
@@ -4924,8 +4924,8 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.27(@aws-sdk/client-s3@3.534.0)(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
-    resolution: {integrity: sha512-MqbfDqM9geSTBWkTBBRWga9TFmFSldJpFeDOLBA17xSIcqxjHKc95rq5R5eq0vJARAcJMObMLhRrzeaWA9ROPQ==}
+  /langchain@0.1.28(@aws-sdk/client-s3@3.534.0)(@aws-sdk/credential-provider-node@3.533.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
+    resolution: {integrity: sha512-LNuILtOSFptfOqDwUwQAl7B0dYrBtxzVZ6lDhc5DA8rk+pyTCy12HQO7t8bGqC8oQlEPYPKaom8VRlvfupUBTw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.310.0
