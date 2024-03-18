@@ -36,8 +36,8 @@ dependencies:
     specifier: ^2.1579.0
     version: 2.1579.0
   axios:
-    specifier: ^1.6.7
-    version: 1.6.7
+    specifier: ^1.6.8
+    version: 1.6.8
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -58,7 +58,7 @@ dependencies:
     version: 11.0.14(react-dom@18.2.0)(react@18.2.0)
   langchain:
     specifier: ^0.1.28
-    version: 0.1.28(@aws-sdk/client-s3@3.535.0)(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3)
+    version: 0.1.28(@aws-sdk/client-s3@3.535.0)(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
     specifier: ^0.358.0
     version: 0.358.0(react@18.2.0)
@@ -3541,8 +3541,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios@1.6.7:
-    resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
+  /axios@1.6.8:
+    resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -5330,7 +5330,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.28(@aws-sdk/client-s3@3.535.0)(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.7)(pdf-parse@1.1.1)(pg@8.11.3):
+  /langchain@0.1.28(@aws-sdk/client-s3@3.535.0)(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.3):
     resolution: {integrity: sha512-LNuILtOSFptfOqDwUwQAl7B0dYrBtxzVZ6lDhc5DA8rk+pyTCy12HQO7t8bGqC8oQlEPYPKaom8VRlvfupUBTw==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5496,7 +5496,7 @@ packages:
       '@langchain/core': 0.1.44
       '@langchain/openai': 0.0.19
       '@pinecone-database/pinecone': 2.1.0
-      axios: 1.6.7
+      axios: 1.6.8
       binary-extensions: 2.2.0
       expr-eval: 2.0.2
       js-tiktoken: 1.0.10
