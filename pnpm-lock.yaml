@@ -54,8 +54,8 @@ dependencies:
     specifier: ^0.30.4
     version: 0.30.4(@neondatabase/serverless@0.9.0)(@types/react@18.2.67)(pg@8.11.3)(react@18.2.0)
   framer-motion:
-    specifier: ^11.0.15
-    version: 11.0.15(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^11.0.18
+    version: 11.0.18(react-dom@18.2.0)(react@18.2.0)
   langchain:
     specifier: ^0.1.28
     version: 0.1.28(@aws-sdk/client-s3@3.537.0)(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.3)
@@ -4383,8 +4383,8 @@ packages:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
     dev: true
 
-  /framer-motion@11.0.15(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-bQzPYHL66lO4SLoAHqWy5v1Pd4TDwYs8I16+ZlsoZjRn2MdUiygb8nyl9kcI/JjhcErSBq2XLaha4F5knn72ow==}
+  /framer-motion@11.0.18(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-TPKJ1KqQzTQ//cGFAb/jrpbbNY8UVh2q69vAcVRA8AxsKYkl5nrW1nsmrHRc5dLsRdwlXSV1kuo1Khylhph7kw==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0
