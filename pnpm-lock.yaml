@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.540.0
     version: 3.540.0
   '@aws-sdk/credential-provider-ini':
-    specifier: ^3.535.0
-    version: 3.535.0(@aws-sdk/credential-provider-node@3.535.0)
+    specifier: ^3.540.0
+    version: 3.540.0(@aws-sdk/credential-provider-node@3.540.0)
   '@aws-sdk/credential-providers':
     specifier: ^3.535.0
     version: 3.535.0
@@ -58,7 +58,7 @@ dependencies:
     version: 11.0.20(react-dom@18.2.0)(react@18.2.0)
   langchain:
     specifier: ^0.1.28
-    version: 0.1.28(@aws-sdk/client-s3@3.540.0)(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.3)
+    version: 0.1.28(@aws-sdk/client-s3@3.540.0)(@aws-sdk/credential-provider-node@3.540.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.3)
   lucide-react:
     specifier: ^0.363.0
     version: 0.363.0(react@18.2.0)
@@ -1742,7 +1742,7 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@langchain/community@0.0.36(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3):
+  /@langchain/community@0.0.36(@aws-sdk/credential-provider-node@3.540.0)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3):
     resolution: {integrity: sha512-4OOKH6F9orGZZHgbvYvekMV6JesL89JC3cmJxNvAr5x7vr7wNNa4fuLq+H7Ew8tnsQOYZk+K57UMYkcwVuwySA==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -2000,7 +2000,7 @@ packages:
       ws:
         optional: true
     dependencies:
-      '@aws-sdk/credential-provider-node': 3.535.0
+      '@aws-sdk/credential-provider-node': 3.540.0
       '@langchain/core': 0.1.44
       '@langchain/openai': 0.0.19
       '@pinecone-database/pinecone': 2.1.0
@@ -5190,7 +5190,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.28(@aws-sdk/client-s3@3.540.0)(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.3):
+  /langchain@0.1.28(@aws-sdk/client-s3@3.540.0)(@aws-sdk/credential-provider-node@3.540.0)(@pinecone-database/pinecone@2.1.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.3):
     resolution: {integrity: sha512-LNuILtOSFptfOqDwUwQAl7B0dYrBtxzVZ6lDhc5DA8rk+pyTCy12HQO7t8bGqC8oQlEPYPKaom8VRlvfupUBTw==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5351,8 +5351,8 @@ packages:
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
       '@aws-sdk/client-s3': 3.540.0
-      '@aws-sdk/credential-provider-node': 3.535.0
-      '@langchain/community': 0.0.36(@aws-sdk/credential-provider-node@3.535.0)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3)
+      '@aws-sdk/credential-provider-node': 3.540.0
+      '@langchain/community': 0.0.36(@aws-sdk/credential-provider-node@3.540.0)(@pinecone-database/pinecone@2.1.0)(pg@8.11.3)
       '@langchain/core': 0.1.44
       '@langchain/openai': 0.0.19
       '@pinecone-database/pinecone': 2.1.0
