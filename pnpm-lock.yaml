@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@aws-sdk/client-s3':
-    specifier: ^3.549.0
-    version: 3.549.0
+    specifier: ^3.550.0
+    version: 3.550.0
   '@aws-sdk/credential-provider-ini':
     specifier: ^3.549.0
     version: 3.549.0(@aws-sdk/credential-provider-node@3.549.0)
@@ -58,7 +58,7 @@ dependencies:
     version: 11.0.25(react-dom@18.2.0)(react@18.2.0)
   langchain:
     specifier: ^0.1.31
-    version: 0.1.31(@aws-sdk/client-s3@3.549.0)(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
+    version: 0.1.31(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
   lucide-react:
     specifier: ^0.365.0
     version: 0.365.0(react@18.2.0)
@@ -275,8 +275,8 @@ packages:
       - aws-crt
     dev: false
 
-  /@aws-sdk/client-s3@3.549.0:
-    resolution: {integrity: sha512-mogi9u0blkrpol2RPuc3iO73jRhL43/iT5TR80zm3QR+i+tRxAuH2cxvyDvIxkRua296aZ9VNxwg47tM5xsHRQ==}
+  /@aws-sdk/client-s3@3.550.0:
+    resolution: {integrity: sha512-45jjDQI0Q37PIteWhywhlExxYaiUeOsTsbE62b+U/FOjYV8tirC8uBY9eHeHaP4IPVGHeQWvEYrFJHNU+qsQLQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-crypto/sha1-browser': 3.0.0
@@ -4969,7 +4969,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.31(@aws-sdk/client-s3@3.549.0)(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
+  /langchain@0.1.31(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
     resolution: {integrity: sha512-J2iZZL48Nwdo1XDU5cS5YYm91b2L6sL3a8hH1gBljvDzCY7jbtUOTuIoRVx5iHN3DXuuLnszS4lhqg0u9hQxBQ==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5129,7 +5129,7 @@ packages:
         optional: true
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
-      '@aws-sdk/client-s3': 3.549.0
+      '@aws-sdk/client-s3': 3.550.0
       '@aws-sdk/credential-provider-node': 3.549.0
       '@langchain/community': 0.0.42(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(pg@8.11.5)
       '@langchain/core': 0.1.44
