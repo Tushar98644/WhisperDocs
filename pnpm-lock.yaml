@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.550.0
     version: 3.550.0
   '@aws-sdk/credential-provider-ini':
-    specifier: ^3.549.0
-    version: 3.549.0(@aws-sdk/credential-provider-node@3.549.0)
+    specifier: ^3.552.0
+    version: 3.552.0(@aws-sdk/credential-provider-node@3.552.0)
   '@aws-sdk/credential-providers':
     specifier: ^3.552.0
     version: 3.552.0
@@ -58,7 +58,7 @@ dependencies:
     version: 11.0.25(react-dom@18.2.0)(react@18.2.0)
   langchain:
     specifier: ^0.1.31
-    version: 0.1.31(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
+    version: 0.1.31(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
   lucide-react:
     specifier: ^0.366.0
     version: 0.366.0(react@18.2.0)
@@ -379,8 +379,8 @@ packages:
       '@smithy/util-base64': 2.3.0
       '@smithy/util-body-length-browser': 2.2.0
       '@smithy/util-body-length-node': 2.3.0
-      '@smithy/util-defaults-mode-browser': 2.2.0
-      '@smithy/util-defaults-mode-node': 2.3.0
+      '@smithy/util-defaults-mode-browser': 2.2.1
+      '@smithy/util-defaults-mode-node': 2.3.1
       '@smithy/util-endpoints': 1.2.0
       '@smithy/util-middleware': 2.2.0
       '@smithy/util-retry': 2.2.0
@@ -475,8 +475,8 @@ packages:
       '@smithy/util-base64': 2.3.0
       '@smithy/util-body-length-browser': 2.2.0
       '@smithy/util-body-length-node': 2.3.0
-      '@smithy/util-defaults-mode-browser': 2.2.0
-      '@smithy/util-defaults-mode-node': 2.3.0
+      '@smithy/util-defaults-mode-browser': 2.2.1
+      '@smithy/util-defaults-mode-node': 2.3.1
       '@smithy/util-endpoints': 1.2.0
       '@smithy/util-middleware': 2.2.0
       '@smithy/util-retry': 2.2.0
@@ -570,8 +570,8 @@ packages:
       '@smithy/util-base64': 2.3.0
       '@smithy/util-body-length-browser': 2.2.0
       '@smithy/util-body-length-node': 2.3.0
-      '@smithy/util-defaults-mode-browser': 2.2.0
-      '@smithy/util-defaults-mode-node': 2.3.0
+      '@smithy/util-defaults-mode-browser': 2.2.1
+      '@smithy/util-defaults-mode-node': 2.3.1
       '@smithy/util-endpoints': 1.2.0
       '@smithy/util-middleware': 2.2.0
       '@smithy/util-retry': 2.2.0
@@ -636,7 +636,7 @@ packages:
     dependencies:
       '@smithy/core': 1.4.2
       '@smithy/protocol-http': 3.3.0
-      '@smithy/signature-v4': 2.2.0
+      '@smithy/signature-v4': 2.2.1
       '@smithy/smithy-client': 2.5.1
       '@smithy/types': 2.12.0
       fast-xml-parser: 4.2.5
@@ -967,7 +967,7 @@ packages:
       '@aws-sdk/util-arn-parser': 3.535.0
       '@smithy/node-config-provider': 2.3.0
       '@smithy/protocol-http': 3.3.0
-      '@smithy/signature-v4': 2.2.0
+      '@smithy/signature-v4': 2.2.1
       '@smithy/smithy-client': 2.5.1
       '@smithy/types': 2.12.0
       '@smithy/util-config-provider': 2.3.0
@@ -981,7 +981,7 @@ packages:
       '@aws-sdk/types': 3.535.0
       '@smithy/property-provider': 2.2.0
       '@smithy/protocol-http': 3.3.0
-      '@smithy/signature-v4': 2.2.0
+      '@smithy/signature-v4': 2.2.1
       '@smithy/types': 2.12.0
       '@smithy/util-middleware': 2.2.0
       tslib: 2.6.2
@@ -1026,7 +1026,7 @@ packages:
       '@aws-sdk/middleware-sdk-s3': 3.535.0
       '@aws-sdk/types': 3.535.0
       '@smithy/protocol-http': 3.3.0
-      '@smithy/signature-v4': 2.2.0
+      '@smithy/signature-v4': 2.2.1
       '@smithy/types': 2.12.0
       tslib: 2.6.2
     dev: false
@@ -1749,7 +1749,7 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@langchain/community@0.0.42(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(pg@8.11.5):
+  /@langchain/community@0.0.42(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(pg@8.11.5):
     resolution: {integrity: sha512-Xp3H0w23X9viHRpb3GUiFl+qjB68h/V7ztPOxR1AtaKlmXkjrSwiLqhMjlVsJ9jyPaKIr5ZOV07gYAXJUz/P8Q==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -2025,7 +2025,7 @@ packages:
       ws:
         optional: true
     dependencies:
-      '@aws-sdk/credential-provider-node': 3.549.0
+      '@aws-sdk/credential-provider-node': 3.552.0
       '@langchain/core': 0.1.44
       '@langchain/openai': 0.0.26
       '@pinecone-database/pinecone': 2.2.0
@@ -2781,20 +2781,6 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       '@smithy/types': 2.12.0
-      tslib: 2.6.2
-    dev: false
-
-  /@smithy/signature-v4@2.2.0:
-    resolution: {integrity: sha512-+B5TNzj/fRZzVW3z8UUJOkNx15+4E0CLuvJmJUA1JUIZFp3rdJ/M2H5r2SqltaVPXL0oIxv/6YK92T9TsFGbFg==}
-    engines: {node: '>=14.0.0'}
-    dependencies:
-      '@smithy/eventstream-codec': 2.2.0
-      '@smithy/is-array-buffer': 2.2.0
-      '@smithy/types': 2.12.0
-      '@smithy/util-hex-encoding': 2.2.0
-      '@smithy/util-middleware': 2.2.0
-      '@smithy/util-uri-escape': 2.2.0
-      '@smithy/util-utf8': 2.3.0
       tslib: 2.6.2
     dev: false
 
@@ -5264,7 +5250,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.31(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
+  /langchain@0.1.31(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
     resolution: {integrity: sha512-J2iZZL48Nwdo1XDU5cS5YYm91b2L6sL3a8hH1gBljvDzCY7jbtUOTuIoRVx5iHN3DXuuLnszS4lhqg0u9hQxBQ==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5425,8 +5411,8 @@ packages:
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
       '@aws-sdk/client-s3': 3.550.0
-      '@aws-sdk/credential-provider-node': 3.549.0
-      '@langchain/community': 0.0.42(@aws-sdk/credential-provider-node@3.549.0)(@pinecone-database/pinecone@2.2.0)(pg@8.11.5)
+      '@aws-sdk/credential-provider-node': 3.552.0
+      '@langchain/community': 0.0.42(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(pg@8.11.5)
       '@langchain/core': 0.1.44
       '@langchain/openai': 0.0.26
       '@pinecone-database/pinecone': 2.2.0
