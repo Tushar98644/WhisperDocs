@@ -57,8 +57,8 @@ dependencies:
     specifier: ^11.0.25
     version: 11.0.25(react-dom@18.2.0)(react@18.2.0)
   langchain:
-    specifier: ^0.1.31
-    version: 0.1.31(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
+    specifier: ^0.1.32
+    version: 0.1.32(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
   lucide-react:
     specifier: ^0.366.0
     version: 0.366.0(react@18.2.0)
@@ -2026,7 +2026,7 @@ packages:
         optional: true
     dependencies:
       '@aws-sdk/credential-provider-node': 3.552.0
-      '@langchain/core': 0.1.44
+      '@langchain/core': 0.1.54
       '@langchain/openai': 0.0.26
       '@pinecone-database/pinecone': 2.2.0
       expr-eval: 2.0.2
@@ -2037,23 +2037,6 @@ packages:
       zod: 3.22.4
     transitivePeerDependencies:
       - encoding
-    dev: false
-
-  /@langchain/core@0.1.44:
-    resolution: {integrity: sha512-6kzRRf8X1TgkAfc8xOZ1qCHalasPDxdcNLnL++ZCGtWLyiKMFP7HcDwG/UewYsbqQd3sTQUPiP9+PHdPWXHd/Q==}
-    engines: {node: '>=18'}
-    dependencies:
-      ansi-styles: 5.2.0
-      camelcase: 6.3.0
-      decamelize: 1.2.0
-      js-tiktoken: 1.0.10
-      langsmith: 0.1.8
-      ml-distance: 4.0.1
-      p-queue: 6.6.2
-      p-retry: 4.6.2
-      uuid: 9.0.1
-      zod: 3.22.4
-      zod-to-json-schema: 3.22.4(zod@3.22.4)
     dev: false
 
   /@langchain/core@0.1.54:
@@ -5250,8 +5233,8 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.31(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
-    resolution: {integrity: sha512-J2iZZL48Nwdo1XDU5cS5YYm91b2L6sL3a8hH1gBljvDzCY7jbtUOTuIoRVx5iHN3DXuuLnszS4lhqg0u9hQxBQ==}
+  /langchain@0.1.32(@aws-sdk/client-s3@3.550.0)(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
+    resolution: {integrity: sha512-blc/6SR08XsOU01HdCGHpxAC0sH+MxM21rYY+KQVZv3QTH1mMd/u6SG3CV0mVv9iWOkgfKc1PK/Ud3OYfvOnww==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.310.0
@@ -5413,7 +5396,7 @@ packages:
       '@aws-sdk/client-s3': 3.550.0
       '@aws-sdk/credential-provider-node': 3.552.0
       '@langchain/community': 0.0.42(@aws-sdk/credential-provider-node@3.552.0)(@pinecone-database/pinecone@2.2.0)(pg@8.11.5)
-      '@langchain/core': 0.1.44
+      '@langchain/core': 0.1.54
       '@langchain/openai': 0.0.26
       '@pinecone-database/pinecone': 2.2.0
       axios: 1.6.8
