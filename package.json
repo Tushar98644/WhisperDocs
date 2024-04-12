@@ -24,7 +24,7 @@
     "clsx": "^2.1.0",
     "dotenv": "^16.4.5",
     "drizzle-kit": "^0.20.14",
-    "drizzle-orm": "^0.30.7",
+    "drizzle-orm": "^0.30.8",
     "framer-motion": "^11.0.28",
     "langchain": "^0.1.33",
     "lucide-react": "^0.367.0",
