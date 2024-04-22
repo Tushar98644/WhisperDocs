@@ -51,8 +51,8 @@ dependencies:
     specifier: ^0.20.14
     version: 0.20.14
   drizzle-orm:
-    specifier: ^0.30.8
-    version: 0.30.8(@neondatabase/serverless@0.9.1)(@types/react@18.2.79)(pg@8.11.5)(react@18.2.0)
+    specifier: ^0.30.9
+    version: 0.30.9(@neondatabase/serverless@0.9.1)(@types/react@18.2.79)(pg@8.11.5)(react@18.2.0)
   framer-motion:
     specifier: ^11.1.5
     version: 11.1.5(react-dom@18.2.0)(react@18.2.0)
@@ -3612,8 +3612,8 @@ packages:
       - supports-color
     dev: false
 
-  /drizzle-orm@0.30.8(@neondatabase/serverless@0.9.1)(@types/react@18.2.79)(pg@8.11.5)(react@18.2.0):
-    resolution: {integrity: sha512-9pBJA0IjnpPpzZ6s9jlS1CQAbKoBmbn2GJesPhXaVblAA/joOJ4AWWevYcqvLGj9SvThBAl7WscN8Zwgg5mnTw==}
+  /drizzle-orm@0.30.9(@neondatabase/serverless@0.9.1)(@types/react@18.2.79)(pg@8.11.5)(react@18.2.0):
+    resolution: {integrity: sha512-VOiCFsexErmgqvNCOmbzmqDCZzZsHoz6SkWAjTFxsTr1AllKDbDJ2+GgedLXsXMDgpg/ljDG1zItIFeZtiO2LA==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=3'
