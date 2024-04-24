@@ -21,7 +21,7 @@
     "aws-sdk": "^2.1604.0",
     "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
+    "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "drizzle-kit": "^0.20.17",
     "drizzle-orm": "^0.30.9",
