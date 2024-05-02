@@ -15,8 +15,8 @@ dependencies:
     specifier: ^3.565.0
     version: 3.565.0(@aws-sdk/client-sso-oidc@3.565.0)
   '@clerk/nextjs':
-    specifier: ^5.0.3
-    version: 5.0.3(eslint@8.57.0)(next@14.2.3)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
+    specifier: ^5.0.5
+    version: 5.0.5(eslint@8.57.0)(next@14.2.3)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
   '@neondatabase/serverless':
     specifier: ^0.9.1
     version: 0.9.1
@@ -889,11 +889,11 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  /@clerk/backend@1.1.0(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-1qd0tKl0B0jJlmmg+o37pXSfzQHRMTk/HGPTvFGWhYCscMXjlKcXrSgDIjN3TATmOIDtA2vCT3AMxBWyVTcKmQ==}
+  /@clerk/backend@1.1.1(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-6r2SPtO5TB53OiGwexLP19LvVoUO+Nz7KlE4US1uposaT2X1+enRtA0LD9DwJnv1YJKxnPXVkwiuqYYlGysusw==}
     engines: {node: '>=18.17.0'}
     dependencies:
-      '@clerk/shared': 2.0.0(react-dom@18.3.1)(react@18.3.1)
+      '@clerk/shared': 2.0.1(react-dom@18.3.1)(react@18.3.1)
       cookie: 0.5.0
       snakecase-keys: 5.4.4
       tslib: 2.4.1
@@ -902,15 +902,15 @@ packages:
       - react-dom
     dev: false
 
-  /@clerk/clerk-react@5.0.1(eslint@8.57.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5):
-    resolution: {integrity: sha512-JMwOtFFYGfEOI7Ux3Hg5QbuSYSUN1srf3rL6ORK6hgNuTbS1Cd24v6XZz3c7xfMo6yL70o870gXi20FecdeYYw==}
+  /@clerk/clerk-react@5.0.3(eslint@8.57.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5):
+    resolution: {integrity: sha512-VlPLm2g3zBSl+xtqDv6qkV59Yj717A/WU9grs6NZWcydkB0oPwuo4ftxW/OiY0IUtA638qyj0ovotVX9tZagTw==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
     dependencies:
-      '@clerk/shared': 2.0.0(react-dom@18.3.1)(react@18.3.1)
-      '@clerk/types': 4.1.0
+      '@clerk/shared': 2.0.1(react-dom@18.3.1)(react@18.3.1)
+      '@clerk/types': 4.2.0
       eslint-config-custom: 0.0.0(eslint@8.57.0)(typescript@5.4.5)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -922,17 +922,17 @@ packages:
       - typescript
     dev: false
 
-  /@clerk/nextjs@5.0.3(eslint@8.57.0)(next@14.2.3)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5):
-    resolution: {integrity: sha512-sTnAEHDkesmr/kwmjH3mth8I8ZBeFcYBtMIszK7Hnbx2XBs0obBDT/YGkFQOawcT2aDCsQpZ5SmPrIgCspE2yQ==}
+  /@clerk/nextjs@5.0.5(eslint@8.57.0)(next@14.2.3)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5):
+    resolution: {integrity: sha512-SVtbyGT+o/4OqNItgy41HMClybZh8iFtphiDSUy/kTjwheqFi00zYYVAU/afMp3XkianqNIwqBdpqo7lUKtAkQ==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       next: ^13.5.4 || ^14.0.3
       react: '>=18'
       react-dom: '>=18'
     dependencies:
-      '@clerk/backend': 1.1.0(react-dom@18.3.1)(react@18.3.1)
-      '@clerk/clerk-react': 5.0.1(eslint@8.57.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
-      '@clerk/shared': 2.0.0(react-dom@18.3.1)(react@18.3.1)
+      '@clerk/backend': 1.1.1(react-dom@18.3.1)(react@18.3.1)
+      '@clerk/clerk-react': 5.0.3(eslint@8.57.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
+      '@clerk/shared': 2.0.1(react-dom@18.3.1)(react@18.3.1)
       crypto-js: 4.2.0
       next: 14.2.3(react-dom@18.3.1)(react@18.3.1)
       path-to-regexp: 6.2.1
@@ -946,8 +946,8 @@ packages:
       - typescript
     dev: false
 
-  /@clerk/shared@2.0.0(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-HRbBGhAetOE6gSFd2jlLJTo+BFjuEr9lD1xigtBXdJUnmVngunciikQU2dZ4i/20X7B4VTrofhNpYi9MsCm7dw==}
+  /@clerk/shared@2.0.1(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-iRjvWCGVzcN5vi9O3+/bEbA22TegxlnHJJE1a6989OFeeXqSKFqmYwDrvM48umJrbvX5cMbKEgctSVXT2IOgCw==}
     engines: {node: '>=18.17.0'}
     requiresBuild: true
     peerDependencies:
@@ -967,8 +967,8 @@ packages:
       swr: 2.2.0(react@18.3.1)
     dev: false
 
-  /@clerk/types@4.1.0:
-    resolution: {integrity: sha512-e9vsD7EdQE0q9mPwPMq1kPtPC9BYGR8BucEoEu+pEyXXD5cdSkzM+WvhUonnTHNzYE/W/X5d1zFDNvCV5YfS5Q==}
+  /@clerk/types@4.2.0:
+    resolution: {integrity: sha512-JtQINgvRGkO9K8os8pSj3QvNrBDvdc0lFpbTwpF3J1CBLafiJmJiBUyUSzWcI/k/9FlClMZxauZufVp9jlSBjg==}
     engines: {node: '>=18.17.0'}
     dependencies:
       csstype: 3.1.1
