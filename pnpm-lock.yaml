@@ -24,8 +24,8 @@ dependencies:
     specifier: ^0.0.1
     version: 0.0.1
   '@pinecone-database/pinecone':
-    specifier: ^2.2.0
-    version: 2.2.0
+    specifier: ^2.2.1
+    version: 2.2.1
   '@radix-ui/react-slot':
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.3.1)(react@18.3.1)
@@ -58,7 +58,7 @@ dependencies:
     version: 11.1.9(react-dom@18.3.1)(react@18.3.1)
   langchain:
     specifier: ^0.1.36
-    version: 0.1.36(@aws-sdk/client-s3@3.574.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
+    version: 0.1.36(@aws-sdk/client-s3@3.574.0)(@pinecone-database/pinecone@2.2.1)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
   lucide-react:
     specifier: ^0.378.0
     version: 0.378.0(react@18.3.1)
@@ -1659,7 +1659,7 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@langchain/community@0.0.47(@pinecone-database/pinecone@2.2.0)(pg@8.11.5):
+  /@langchain/community@0.0.47(@pinecone-database/pinecone@2.2.1)(pg@8.11.5):
     resolution: {integrity: sha512-j20KhnWs16K/qxaY3QccOFMfcEmiTXN00NB1IPeO1pexRsvHL7GfqZ8rR5cOSSBfft2iuoGxaj1EZIyxh5ftgA==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -1940,7 +1940,7 @@ packages:
     dependencies:
       '@langchain/core': 0.1.60
       '@langchain/openai': 0.0.28
-      '@pinecone-database/pinecone': 2.2.0
+      '@pinecone-database/pinecone': 2.2.1
       expr-eval: 2.0.2
       flat: 5.0.2
       langsmith: 0.1.8
@@ -2111,8 +2111,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: false
 
-  /@pinecone-database/pinecone@2.2.0:
-    resolution: {integrity: sha512-qfVs9n5YyTmerIV1GE1u89xF1W3oFSF53STW68Oqyxey0dGq4775cCw8G5pnwoy872uqfh+tMRDME9bcWfinUw==}
+  /@pinecone-database/pinecone@2.2.1:
+    resolution: {integrity: sha512-8i6oT8EzYLlxi5Th4tJ8Cae+VPyHzlEsiVSxCOEx+EahbzaiWmpQMZSmO/RlXF/dOjOI+pXvqfcFYcF1awtPlw==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@sinclair/typebox': 0.29.6
@@ -4961,7 +4961,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.36(@aws-sdk/client-s3@3.574.0)(@pinecone-database/pinecone@2.2.0)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
+  /langchain@0.1.36(@aws-sdk/client-s3@3.574.0)(@pinecone-database/pinecone@2.2.1)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
     resolution: {integrity: sha512-NTbnCL/jKWIeEI//Nm1oG8nhW3vkYWvEMr1MPotmTThTfeKfO87eV/OAzAyh6Ruy6GFs/qofRgQZGIe6XvXTNQ==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5125,11 +5125,11 @@ packages:
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
       '@aws-sdk/client-s3': 3.574.0
-      '@langchain/community': 0.0.47(@pinecone-database/pinecone@2.2.0)(pg@8.11.5)
+      '@langchain/community': 0.0.47(@pinecone-database/pinecone@2.2.1)(pg@8.11.5)
       '@langchain/core': 0.1.60
       '@langchain/openai': 0.0.28
       '@langchain/textsplitters': 0.0.0
-      '@pinecone-database/pinecone': 2.2.0
+      '@pinecone-database/pinecone': 2.2.1
       axios: 1.6.8
       binary-extensions: 2.2.0
       js-tiktoken: 1.0.10
