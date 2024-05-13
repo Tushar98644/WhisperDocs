@@ -57,8 +57,8 @@ dependencies:
     specifier: ^11.1.9
     version: 11.1.9(react-dom@18.3.1)(react@18.3.1)
   langchain:
-    specifier: ^0.1.36
-    version: 0.1.36(@aws-sdk/client-s3@3.574.0)(@pinecone-database/pinecone@2.2.1)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
+    specifier: ^0.1.37
+    version: 0.1.37(@aws-sdk/client-s3@3.574.0)(@pinecone-database/pinecone@2.2.1)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
   lucide-react:
     specifier: ^0.378.0
     version: 0.378.0(react@18.3.1)
@@ -1959,7 +1959,7 @@ packages:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
-      js-tiktoken: 1.0.10
+      js-tiktoken: 1.0.11
       langsmith: 0.1.8
       ml-distance: 4.0.1
       mustache: 4.2.0
@@ -1975,7 +1975,7 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       '@langchain/core': 0.1.60
-      js-tiktoken: 1.0.10
+      js-tiktoken: 1.0.11
       openai: 4.32.2
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
@@ -4887,12 +4887,6 @@ packages:
     resolution: {integrity: sha512-gF1cRrHhIzNfToc802P800N8PpXS+evLLXfsVpowqmAFR9uwbi89WvXg2QspOmXL8QL86J4T1EpFu+yUkwJY3Q==}
     dev: false
 
-  /js-tiktoken@1.0.10:
-    resolution: {integrity: sha512-ZoSxbGjvGyMT13x6ACo9ebhDha/0FHdKA+OsQcMOWcm1Zs7r90Rhk5lhERLzji+3rA7EKpXCgwXcM5fF3DMpdA==}
-    dependencies:
-      base64-js: 1.5.1
-    dev: false
-
   /js-tiktoken@1.0.11:
     resolution: {integrity: sha512-PajXFLq2vx7/8jllQZ43vzNpAai/0MOVdJjW/UrNyJorNQRTjHrqdGJG/mjHVy7h9M6dW6CaG43eNLMYFkTh6w==}
     dependencies:
@@ -4961,8 +4955,8 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.36(@aws-sdk/client-s3@3.574.0)(@pinecone-database/pinecone@2.2.1)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
-    resolution: {integrity: sha512-NTbnCL/jKWIeEI//Nm1oG8nhW3vkYWvEMr1MPotmTThTfeKfO87eV/OAzAyh6Ruy6GFs/qofRgQZGIe6XvXTNQ==}
+  /langchain@0.1.37(@aws-sdk/client-s3@3.574.0)(@pinecone-database/pinecone@2.2.1)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
+    resolution: {integrity: sha512-rpaLEJtRrLYhAViEp7/aHfSkxbgSqHJ5n10tXv3o4kHP/wOin85RpTgewwvGjEaKc3797jOg+sLSk6a7e0UlMg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.310.0
@@ -4970,6 +4964,7 @@ packages:
       '@aws-sdk/client-sfn': ^3.310.0
       '@aws-sdk/credential-provider-node': ^3.388.0
       '@azure/storage-blob': ^12.15.0
+      '@browserbasehq/sdk': '*'
       '@gomomento/sdk': ^1.51.1
       '@gomomento/sdk-core': ^1.51.1
       '@gomomento/sdk-web': ^1.51.1
@@ -5027,6 +5022,8 @@ packages:
       '@aws-sdk/credential-provider-node':
         optional: true
       '@azure/storage-blob':
+        optional: true
+      '@browserbasehq/sdk':
         optional: true
       '@gomomento/sdk':
         optional: true
@@ -5132,7 +5129,7 @@ packages:
       '@pinecone-database/pinecone': 2.2.1
       axios: 1.6.8
       binary-extensions: 2.2.0
-      js-tiktoken: 1.0.10
+      js-tiktoken: 1.0.11
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
       langchainhub: 0.0.8
