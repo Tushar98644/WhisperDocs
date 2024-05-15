@@ -23,7 +23,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
-    "drizzle-kit": "^0.21.1",
+    "drizzle-kit": "^0.21.2",
     "drizzle-orm": "^0.30.10",
     "framer-motion": "^11.2.0",
     "langchain": "^0.1.37",
