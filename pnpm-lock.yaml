@@ -36,8 +36,8 @@ dependencies:
     specifier: ^2.1622.0
     version: 2.1622.0
   axios:
-    specifier: ^1.6.8
-    version: 1.6.8
+    specifier: ^1.7.0
+    version: 1.7.0
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -58,7 +58,7 @@ dependencies:
     version: 11.2.4(react-dom@18.3.1)(react@18.3.1)
   langchain:
     specifier: ^0.1.37
-    version: 0.1.37(@aws-sdk/client-s3@3.577.0)(@pinecone-database/pinecone@2.2.1)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5)
+    version: 0.1.37(@aws-sdk/client-s3@3.577.0)(@pinecone-database/pinecone@2.2.1)(axios@1.7.0)(pdf-parse@1.1.1)(pg@8.11.5)
   lucide-react:
     specifier: ^0.378.0
     version: 0.378.0(react@18.3.1)
@@ -3032,8 +3032,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios@1.6.8:
-    resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
+  /axios@1.7.0:
+    resolution: {integrity: sha512-IiB0wQeKyPRdsFVhBgIo31FbzOyf2M6wYl7/NVutFwFBRMiAbjNiydJIHKeLmPugF4kJLfA1uWZ82Is2QzqqFA==}
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -4771,7 +4771,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.1.37(@aws-sdk/client-s3@3.577.0)(@pinecone-database/pinecone@2.2.1)(axios@1.6.8)(pdf-parse@1.1.1)(pg@8.11.5):
+  /langchain@0.1.37(@aws-sdk/client-s3@3.577.0)(@pinecone-database/pinecone@2.2.1)(axios@1.7.0)(pdf-parse@1.1.1)(pg@8.11.5):
     resolution: {integrity: sha512-rpaLEJtRrLYhAViEp7/aHfSkxbgSqHJ5n10tXv3o4kHP/wOin85RpTgewwvGjEaKc3797jOg+sLSk6a7e0UlMg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -4943,7 +4943,7 @@ packages:
       '@langchain/openai': 0.0.28
       '@langchain/textsplitters': 0.0.0
       '@pinecone-database/pinecone': 2.2.1
-      axios: 1.6.8
+      axios: 1.7.0
       binary-extensions: 2.2.0
       js-tiktoken: 1.0.11
       js-yaml: 4.1.0
