@@ -102,7 +102,7 @@ devDependencies:
     version: 2.3.5
   '@types/node':
     specifier: ^20
-    version: 20.12.12
+    version: 20.12.13
   '@types/pdf-parse':
     specifier: ^1.1.4
     version: 1.1.4
@@ -2382,7 +2382,7 @@ packages:
   /@types/node-fetch@2.6.11:
     resolution: {integrity: sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==}
     dependencies:
-      '@types/node': 20.12.12
+      '@types/node': 20.12.13
       form-data: 4.0.0
     dev: false
 
@@ -2392,8 +2392,8 @@ packages:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.12.12:
-    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+  /@types/node@20.12.13:
+    resolution: {integrity: sha512-gBGeanV41c1L171rR7wjbMiEpEI/l5XFQdLLfhr/REwpgDy/4U8y89+i8kRiLzDyZdOkXh+cRaTetUnCYutoXA==}
     dependencies:
       undici-types: 5.26.5
 
@@ -2404,7 +2404,7 @@ packages:
   /@types/pg@8.11.6:
     resolution: {integrity: sha512-/2WmmBXHLsfRqzfHW7BNZ8SbYzE8OSk7i3WjFYvfgRHj7S1xj+16Je5fUKv3lVdVzk/zn9TXOqf+avFCFIE0yQ==}
     dependencies:
-      '@types/node': 20.12.12
+      '@types/node': 20.12.13
       pg-protocol: 1.6.1
       pg-types: 4.0.2
     dev: false
