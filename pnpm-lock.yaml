@@ -57,8 +57,8 @@ dependencies:
     specifier: ^11.2.10
     version: 11.2.10(react-dom@18.3.1)(react@18.3.1)
   langchain:
-    specifier: ^0.2.3
-    version: 0.2.3(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+    specifier: ^0.2.4
+    version: 0.2.4(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
   lucide-react:
     specifier: ^0.383.0
     version: 0.383.0(react@18.3.1)
@@ -1460,7 +1460,7 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@langchain/core@0.1.60:
+  /@langchain/core@0.1.60(langchain@0.2.4):
     resolution: {integrity: sha512-3EJW4ir0tFe17AakpXCgO9flSoDjFELpSQs2w/CMZ5FBlHYxo3ODgVQAZvlHy97khEVgcnvlL3EDhPE7IdNibA==}
     engines: {node: '>=18'}
     dependencies:
@@ -1468,7 +1468,7 @@ packages:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.8
+      langsmith: 0.1.30(@langchain/core@0.1.60)(langchain@0.2.4)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -1476,9 +1476,12 @@ packages:
       uuid: 9.0.1
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
+    transitivePeerDependencies:
+      - langchain
+      - openai
     dev: false
 
-  /@langchain/core@0.2.0:
+  /@langchain/core@0.2.0(langchain@0.2.4):
     resolution: {integrity: sha512-UbCJUp9eh2JXd9AW/vhPbTgtZoMgTqJgSan5Wf/EP27X8JM65lWdCOpJW+gHyBXvabbyrZz3/EGaptTUL5gutw==}
     engines: {node: '>=18'}
     dependencies:
@@ -1486,7 +1489,7 @@ packages:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.8
+      langsmith: 0.1.30(@langchain/core@0.2.0)(langchain@0.2.4)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -1494,27 +1497,55 @@ packages:
       uuid: 9.0.1
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
+    transitivePeerDependencies:
+      - langchain
+      - openai
     dev: false
 
-  /@langchain/openai@0.0.28:
-    resolution: {integrity: sha512-2s1RA3/eAnz4ahdzsMPBna9hfAqpFNlWdHiPxVGZ5yrhXsbLWWoPcF+22LCk9t0HJKtazi2GCIWc0HVXH9Abig==}
+  /@langchain/core@0.2.5(langchain@0.2.4)(openai@4.47.3):
+    resolution: {integrity: sha512-tMaKRFVewFn8crQwlbXGjT7hlMdX1yXHap1ebBx7Bb2C3C9AeZ+sXbX11m27yamypNlVVegwUcisw3YCaDkZJA==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.1.60
+      ansi-styles: 5.2.0
+      camelcase: 6.3.0
+      decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      openai: 4.32.2
+      langsmith: 0.1.30(@langchain/core@0.2.5)(langchain@0.2.4)(openai@4.47.3)
+      ml-distance: 4.0.1
+      mustache: 4.2.0
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      uuid: 9.0.1
+      zod: 3.22.4
+      zod-to-json-schema: 3.22.5(zod@3.22.4)
+    transitivePeerDependencies:
+      - langchain
+      - openai
+    dev: false
+
+  /@langchain/openai@0.1.1(langchain@0.2.4):
+    resolution: {integrity: sha512-0M7GOA7+dPMQATn8UrYBUp0tWxBJjsJEdRPf+MhDD4jdK70qfC6tBbB/lrT0HchVnz5GFE7az4EUtSh8LiUgzA==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@langchain/core': 0.2.5(langchain@0.2.4)(openai@4.47.3)
+      js-tiktoken: 1.0.12
+      openai: 4.47.3
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
     transitivePeerDependencies:
       - encoding
+      - langchain
     dev: false
 
-  /@langchain/textsplitters@0.0.0:
+  /@langchain/textsplitters@0.0.0(langchain@0.2.4):
     resolution: {integrity: sha512-3hPesWomnmVeYMppEGYbyv0v/sRUugUdlFBNn9m1ueJYHAIKbvCErkWxNUH3guyKKYgJVrkvZoQxcd9faucSaw==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.1.60
+      '@langchain/core': 0.1.60(langchain@0.2.4)
       js-tiktoken: 1.0.12
+    transitivePeerDependencies:
+      - langchain
+      - openai
     dev: false
 
   /@neondatabase/serverless@0.9.3:
@@ -4321,8 +4352,8 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.2.3(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1):
-    resolution: {integrity: sha512-T9xR7zd+Nj0oXy6WoYKmZLy0DlQiDLFPGYWdOXDxy+AvqlujoPdVQgDSpdqiOHvAjezrByAoKxoHCz5XMwTP/Q==}
+  /langchain@0.2.4(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1):
+    resolution: {integrity: sha512-zBsBuNREn/3IlWvIQqhQ2iqf6JJhyjjsB1Db/keDkcgThPI3EcblC1pqAXU2BIKHmpNUkHBR2bAUok5+xtgOcw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.310.0
@@ -4478,9 +4509,9 @@ packages:
         optional: true
     dependencies:
       '@aws-sdk/client-s3': 3.588.0
-      '@langchain/core': 0.2.0
-      '@langchain/openai': 0.0.28
-      '@langchain/textsplitters': 0.0.0
+      '@langchain/core': 0.2.0(langchain@0.2.4)
+      '@langchain/openai': 0.1.1(langchain@0.2.4)
+      '@langchain/textsplitters': 0.0.0(langchain@0.2.4)
       '@pinecone-database/pinecone': 2.2.2
       axios: 1.7.2
       binary-extensions: 2.2.0
@@ -4488,7 +4519,7 @@ packages:
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
       langchainhub: 0.0.8
-      langsmith: 0.1.8
+      langsmith: 0.1.30(@langchain/core@0.2.0)(langchain@0.2.4)
       ml-distance: 4.0.1
       openapi-types: 12.1.3
       p-retry: 4.6.2
@@ -4499,18 +4530,78 @@ packages:
       zod-to-json-schema: 3.22.5(zod@3.22.4)
     transitivePeerDependencies:
       - encoding
+      - openai
     dev: false
 
   /langchainhub@0.0.8:
     resolution: {integrity: sha512-Woyb8YDHgqqTOZvWIbm2CaFDGfZ4NTSyXV687AG4vXEfoNo7cGQp7nhl7wL3ehenKWmNEmcxCLgOZzW8jE6lOQ==}
     dev: false
 
-  /langsmith@0.1.8:
-    resolution: {integrity: sha512-GMEPhUPmkOPUih2ho07kSMhHYpCDkavc6Zg0XgBjhLsYqYaobOxFFNyOc806jOvH2yw2tmiKLuiAdlQAVbDnHg==}
-    hasBin: true
+  /langsmith@0.1.30(@langchain/core@0.1.60)(langchain@0.2.4):
+    resolution: {integrity: sha512-g8f10H1iiRjCweXJjgM3Y9xl6ApCa1OThDvc0BlSDLVrGVPy1on9wT39vAzYkeadC7oG48p7gfpGlYH3kLkJ9Q==}
+    peerDependencies:
+      '@langchain/core': '*'
+      langchain: '*'
+      openai: '*'
+    peerDependenciesMeta:
+      '@langchain/core':
+        optional: true
+      langchain:
+        optional: true
+      openai:
+        optional: true
     dependencies:
+      '@langchain/core': 0.1.60(langchain@0.2.4)
       '@types/uuid': 9.0.8
       commander: 10.0.1
+      langchain: 0.2.4(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      uuid: 9.0.1
+    dev: false
+
+  /langsmith@0.1.30(@langchain/core@0.2.0)(langchain@0.2.4):
+    resolution: {integrity: sha512-g8f10H1iiRjCweXJjgM3Y9xl6ApCa1OThDvc0BlSDLVrGVPy1on9wT39vAzYkeadC7oG48p7gfpGlYH3kLkJ9Q==}
+    peerDependencies:
+      '@langchain/core': '*'
+      langchain: '*'
+      openai: '*'
+    peerDependenciesMeta:
+      '@langchain/core':
+        optional: true
+      langchain:
+        optional: true
+      openai:
+        optional: true
+    dependencies:
+      '@langchain/core': 0.2.0(langchain@0.2.4)
+      '@types/uuid': 9.0.8
+      commander: 10.0.1
+      langchain: 0.2.4(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      uuid: 9.0.1
+    dev: false
+
+  /langsmith@0.1.30(@langchain/core@0.2.5)(langchain@0.2.4)(openai@4.47.3):
+    resolution: {integrity: sha512-g8f10H1iiRjCweXJjgM3Y9xl6ApCa1OThDvc0BlSDLVrGVPy1on9wT39vAzYkeadC7oG48p7gfpGlYH3kLkJ9Q==}
+    peerDependencies:
+      '@langchain/core': '*'
+      langchain: '*'
+      openai: '*'
+    peerDependenciesMeta:
+      '@langchain/core':
+        optional: true
+      langchain:
+        optional: true
+      openai:
+        optional: true
+    dependencies:
+      '@langchain/core': 0.2.5(langchain@0.2.4)(openai@4.47.3)
+      '@types/uuid': 9.0.8
+      commander: 10.0.1
+      langchain: 0.2.4(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      openai: 4.47.3
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
@@ -4897,8 +4988,8 @@ packages:
     engines: {node: '>=18'}
     dev: false
 
-  /openai@4.32.2:
-    resolution: {integrity: sha512-JXU5ttiL4liZJ2GRYvyqd/m9zA64bI8e6B5BtyKlbkcv5DAd5wiDgd0cQ1CIIdsEH90k5p3TdK6MyjnUhvOe7w==}
+  /openai@4.47.3:
+    resolution: {integrity: sha512-470d4ibH5kizXflCzgur22GpM4nOjrg7WQ9jTOa3dNKEn248oBy4+pjOyfcFR4V4YUn/YlDNjp6h83PbviCCKQ==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.17
