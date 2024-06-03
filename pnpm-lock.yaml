@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.0.4
     version: 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
   aws-sdk:
-    specifier: ^2.1631.0
-    version: 2.1631.0
+    specifier: ^2.1632.0
+    version: 2.1632.0
   axios:
     specifier: ^1.7.2
     version: 1.7.2
@@ -3256,8 +3256,8 @@ packages:
     resolution: {integrity: sha512-j1QzY8iPNPG4o4xmO3ptzpRxTciqD3MgEHtifP/YnJpIo58Xu+ne4BejlbkuaLfXn/nz6HFiw29bLpj2PNMdGg==}
     engines: {node: '>= 0.4'}
 
-  /aws-sdk@2.1631.0:
-    resolution: {integrity: sha512-QG1A1bsgy9jKyY20LVxEeB16zEbn3dPIZmVeh/7vk6ukb2+5Vjh0s+E5bVlNHFFXVu6rsviayqGmjr16fJ5I1g==}
+  /aws-sdk@2.1632.0:
+    resolution: {integrity: sha512-doNHUxto00r7r9qWb5RcIsQHUTHdGiPPyJoXxmsmQW6aOr69BqYeuFl8SicNS1YzP6s5sFFnDNKq9KB7jA2fyA==}
     engines: {node: '>= 10.0.0'}
     requiresBuild: true
     dependencies:
