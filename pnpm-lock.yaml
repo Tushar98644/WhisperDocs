@@ -24,8 +24,8 @@ dependencies:
     specifier: ^0.0.1
     version: 0.0.1
   '@pinecone-database/pinecone':
-    specifier: ^2.2.1
-    version: 2.2.1
+    specifier: ^2.2.2
+    version: 2.2.2
   '@radix-ui/react-slot':
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.3.3)(react@18.3.1)
@@ -58,7 +58,7 @@ dependencies:
     version: 11.2.10(react-dom@18.3.1)(react@18.3.1)
   langchain:
     specifier: ^0.2.3
-    version: 0.2.3(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.1)(axios@1.7.2)(pdf-parse@1.1.1)
+    version: 0.2.3(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
   lucide-react:
     specifier: ^0.381.0
     version: 0.381.0(react@18.3.1)
@@ -1637,8 +1637,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: false
 
-  /@pinecone-database/pinecone@2.2.1:
-    resolution: {integrity: sha512-8i6oT8EzYLlxi5Th4tJ8Cae+VPyHzlEsiVSxCOEx+EahbzaiWmpQMZSmO/RlXF/dOjOI+pXvqfcFYcF1awtPlw==}
+  /@pinecone-database/pinecone@2.2.2:
+    resolution: {integrity: sha512-gbe/4SowHc64pHIm0kBdgY9hVdzsQnnnpcWviwYMB33gOmsL8brvE8fUSpl1dLDvdyXzKcQkzdBsjCDlqgpdMA==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@sinclair/typebox': 0.29.6
@@ -4321,7 +4321,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.2.3(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.1)(axios@1.7.2)(pdf-parse@1.1.1):
+  /langchain@0.2.3(@aws-sdk/client-s3@3.588.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1):
     resolution: {integrity: sha512-T9xR7zd+Nj0oXy6WoYKmZLy0DlQiDLFPGYWdOXDxy+AvqlujoPdVQgDSpdqiOHvAjezrByAoKxoHCz5XMwTP/Q==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -4481,7 +4481,7 @@ packages:
       '@langchain/core': 0.2.0
       '@langchain/openai': 0.0.28
       '@langchain/textsplitters': 0.0.0
-      '@pinecone-database/pinecone': 2.2.1
+      '@pinecone-database/pinecone': 2.2.2
       axios: 1.7.2
       binary-extensions: 2.2.0
       js-tiktoken: 1.0.12
