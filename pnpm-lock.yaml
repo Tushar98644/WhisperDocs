@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@aws-sdk/client-s3':
-    specifier: ^3.590.0
-    version: 3.590.0
+    specifier: ^3.591.0
+    version: 3.591.0
   '@aws-sdk/credential-provider-ini':
     specifier: ^3.590.0
     version: 3.590.0(@aws-sdk/client-sso-oidc@3.590.0)(@aws-sdk/client-sts@3.590.0)
@@ -58,7 +58,7 @@ dependencies:
     version: 11.2.10(react-dom@18.3.1)(react@18.3.1)
   langchain:
     specifier: ^0.2.5
-    version: 0.2.5(@aws-sdk/client-s3@3.590.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+    version: 0.2.5(@aws-sdk/client-s3@3.591.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
   lucide-react:
     specifier: ^0.383.0
     version: 0.383.0(react@18.3.1)
@@ -260,8 +260,8 @@ packages:
       - aws-crt
     dev: false
 
-  /@aws-sdk/client-s3@3.590.0:
-    resolution: {integrity: sha512-so+pNua0ihsHaSdskw8HCwruoYTAfYSEs3ix4GD1++83C96KaJp3udAutYiCA+84JXg9zitFa7eK7ORJAVZmTw==}
+  /@aws-sdk/client-s3@3.591.0:
+    resolution: {integrity: sha512-YmMQpOdBak+0OZh0LfbK+3u1MA0csAok9yDP5/tD1am7hCg1+zPimHSmpjLBHoKELVpsW5QRuBdCi0dn95uxmg==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@aws-crypto/sha1-browser': 3.0.0
@@ -4355,7 +4355,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.2.5(@aws-sdk/client-s3@3.590.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1):
+  /langchain@0.2.5(@aws-sdk/client-s3@3.591.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1):
     resolution: {integrity: sha512-H5WL0NanCdQ+tzoeEt7Fyz9YGdR3wbfDvfQrJvxAO95istKo5JraRh24dzyvqxM9439xwRMNaMIpMwsyqtWDtQ==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -4511,7 +4511,7 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@aws-sdk/client-s3': 3.590.0
+      '@aws-sdk/client-s3': 3.591.0
       '@langchain/core': 0.2.5(langchain@0.2.5)
       '@langchain/openai': 0.1.1(langchain@0.2.5)
       '@langchain/textsplitters': 0.0.0(langchain@0.2.5)
@@ -4557,7 +4557,7 @@ packages:
       '@langchain/core': 0.1.60(langchain@0.2.5)
       '@types/uuid': 9.0.8
       commander: 10.0.1
-      langchain: 0.2.5(@aws-sdk/client-s3@3.590.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      langchain: 0.2.5(@aws-sdk/client-s3@3.591.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
@@ -4580,7 +4580,7 @@ packages:
       '@langchain/core': 0.2.5(langchain@0.2.5)
       '@types/uuid': 9.0.8
       commander: 10.0.1
-      langchain: 0.2.5(@aws-sdk/client-s3@3.590.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      langchain: 0.2.5(@aws-sdk/client-s3@3.591.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
@@ -4603,7 +4603,7 @@ packages:
       '@langchain/core': 0.2.5(langchain@0.2.5)(openai@4.47.3)
       '@types/uuid': 9.0.8
       commander: 10.0.1
-      langchain: 0.2.5(@aws-sdk/client-s3@3.590.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      langchain: 0.2.5(@aws-sdk/client-s3@3.591.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
       openai: 4.47.3
       p-queue: 6.6.2
       p-retry: 4.6.2
