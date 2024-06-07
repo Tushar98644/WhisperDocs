@@ -48,8 +48,8 @@ dependencies:
     specifier: ^16.4.5
     version: 16.4.5
   drizzle-kit:
-    specifier: ^0.22.2
-    version: 0.22.2
+    specifier: ^0.22.4
+    version: 0.22.4
   drizzle-orm:
     specifier: ^0.31.1
     version: 0.31.1(@neondatabase/serverless@0.9.3)(@types/react@18.3.3)(pg@8.12.0)(react@18.3.1)
@@ -3441,8 +3441,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /drizzle-kit@0.22.2:
-    resolution: {integrity: sha512-dxluXlhT1N9bpj2eZR3N/z3u4H0PbbrBYgyouIobFF25tOt2Buy1abx26Jii96qcYV0JgxjhnuV+FBcgR0Xa0w==}
+  /drizzle-kit@0.22.4:
+    resolution: {integrity: sha512-jsiYGqHsbsP/GtM26y/bGK7je1ja+1H/RniCt1ovg2E7tMNraw6XdqKcjxHhb8FonCfDDjvwFgouRsZS46vrmA==}
     hasBin: true
     dependencies:
       '@esbuild-kit/esm-loader': 2.6.5
