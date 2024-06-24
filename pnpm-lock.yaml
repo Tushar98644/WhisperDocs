@@ -57,8 +57,8 @@ dependencies:
     specifier: ^11.2.11
     version: 11.2.11(react-dom@18.3.1)(react@18.3.1)
   langchain:
-    specifier: ^0.2.5
-    version: 0.2.5(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+    specifier: ^0.2.6
+    version: 0.2.6(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
   lucide-react:
     specifier: ^0.395.0
     version: 0.395.0(react@18.3.1)
@@ -1453,7 +1453,7 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@langchain/core@0.1.60(langchain@0.2.5):
+  /@langchain/core@0.1.60(langchain@0.2.6):
     resolution: {integrity: sha512-3EJW4ir0tFe17AakpXCgO9flSoDjFELpSQs2w/CMZ5FBlHYxo3ODgVQAZvlHy97khEVgcnvlL3EDhPE7IdNibA==}
     engines: {node: '>=18'}
     dependencies:
@@ -1461,7 +1461,7 @@ packages:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.30(@langchain/core@0.1.60)(langchain@0.2.5)
+      langsmith: 0.1.30(@langchain/core@0.1.60)(langchain@0.2.6)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -1474,7 +1474,7 @@ packages:
       - openai
     dev: false
 
-  /@langchain/core@0.2.5(langchain@0.2.5):
+  /@langchain/core@0.2.5(langchain@0.2.6):
     resolution: {integrity: sha512-tMaKRFVewFn8crQwlbXGjT7hlMdX1yXHap1ebBx7Bb2C3C9AeZ+sXbX11m27yamypNlVVegwUcisw3YCaDkZJA==}
     engines: {node: '>=18'}
     dependencies:
@@ -1482,7 +1482,7 @@ packages:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.30(@langchain/core@0.2.5)(langchain@0.2.5)
+      langsmith: 0.1.30(@langchain/core@0.2.5)(langchain@0.2.6)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -1495,7 +1495,7 @@ packages:
       - openai
     dev: false
 
-  /@langchain/core@0.2.5(langchain@0.2.5)(openai@4.47.3):
+  /@langchain/core@0.2.5(langchain@0.2.6)(openai@4.47.3):
     resolution: {integrity: sha512-tMaKRFVewFn8crQwlbXGjT7hlMdX1yXHap1ebBx7Bb2C3C9AeZ+sXbX11m27yamypNlVVegwUcisw3YCaDkZJA==}
     engines: {node: '>=18'}
     dependencies:
@@ -1503,7 +1503,7 @@ packages:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.30(@langchain/core@0.2.5)(langchain@0.2.5)(openai@4.47.3)
+      langsmith: 0.1.30(@langchain/core@0.2.5)(langchain@0.2.6)(openai@4.47.3)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -1516,11 +1516,11 @@ packages:
       - openai
     dev: false
 
-  /@langchain/openai@0.1.1(langchain@0.2.5):
+  /@langchain/openai@0.1.1(langchain@0.2.6):
     resolution: {integrity: sha512-0M7GOA7+dPMQATn8UrYBUp0tWxBJjsJEdRPf+MhDD4jdK70qfC6tBbB/lrT0HchVnz5GFE7az4EUtSh8LiUgzA==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.5(langchain@0.2.5)(openai@4.47.3)
+      '@langchain/core': 0.2.5(langchain@0.2.6)(openai@4.47.3)
       js-tiktoken: 1.0.12
       openai: 4.47.3
       zod: 3.22.4
@@ -1530,11 +1530,11 @@ packages:
       - langchain
     dev: false
 
-  /@langchain/textsplitters@0.0.0(langchain@0.2.5):
+  /@langchain/textsplitters@0.0.0(langchain@0.2.6):
     resolution: {integrity: sha512-3hPesWomnmVeYMppEGYbyv0v/sRUugUdlFBNn9m1ueJYHAIKbvCErkWxNUH3guyKKYgJVrkvZoQxcd9faucSaw==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.1.60(langchain@0.2.5)
+      '@langchain/core': 0.1.60(langchain@0.2.6)
       js-tiktoken: 1.0.12
     transitivePeerDependencies:
       - langchain
@@ -4358,8 +4358,8 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /langchain@0.2.5(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1):
-    resolution: {integrity: sha512-H5WL0NanCdQ+tzoeEt7Fyz9YGdR3wbfDvfQrJvxAO95istKo5JraRh24dzyvqxM9439xwRMNaMIpMwsyqtWDtQ==}
+  /langchain@0.2.6(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1):
+    resolution: {integrity: sha512-vDAJHGu/lA4pn3hkyzSC6RiaZhtj0ozfRyG8L6J2vCnXyJV/lgk9uGMP2x645EBrSozBMHJBng1UYeaUR/1fQQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.310.0
@@ -4406,7 +4406,7 @@ packages:
       redis: ^4.6.4
       sonix-speech-recognition: ^2.1.1
       srt-parser-2: ^1.2.3
-      typeorm: ^0.3.12
+      typeorm: ^0.3.20
       weaviate-ts-client: '*'
       web-auth-library: ^1.0.3
       ws: ^8.14.2
@@ -4515,9 +4515,9 @@ packages:
         optional: true
     dependencies:
       '@aws-sdk/client-s3': 3.600.0
-      '@langchain/core': 0.2.5(langchain@0.2.5)
-      '@langchain/openai': 0.1.1(langchain@0.2.5)
-      '@langchain/textsplitters': 0.0.0(langchain@0.2.5)
+      '@langchain/core': 0.2.5(langchain@0.2.6)
+      '@langchain/openai': 0.1.1(langchain@0.2.6)
+      '@langchain/textsplitters': 0.0.0(langchain@0.2.6)
       '@pinecone-database/pinecone': 2.2.2
       axios: 1.7.2
       binary-extensions: 2.2.0
@@ -4525,7 +4525,7 @@ packages:
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
       langchainhub: 0.0.8
-      langsmith: 0.1.30(@langchain/core@0.2.5)(langchain@0.2.5)
+      langsmith: 0.1.30(@langchain/core@0.2.5)(langchain@0.2.6)
       ml-distance: 4.0.1
       openapi-types: 12.1.3
       p-retry: 4.6.2
@@ -4543,7 +4543,7 @@ packages:
     resolution: {integrity: sha512-Woyb8YDHgqqTOZvWIbm2CaFDGfZ4NTSyXV687AG4vXEfoNo7cGQp7nhl7wL3ehenKWmNEmcxCLgOZzW8jE6lOQ==}
     dev: false
 
-  /langsmith@0.1.30(@langchain/core@0.1.60)(langchain@0.2.5):
+  /langsmith@0.1.30(@langchain/core@0.1.60)(langchain@0.2.6):
     resolution: {integrity: sha512-g8f10H1iiRjCweXJjgM3Y9xl6ApCa1OThDvc0BlSDLVrGVPy1on9wT39vAzYkeadC7oG48p7gfpGlYH3kLkJ9Q==}
     peerDependencies:
       '@langchain/core': '*'
@@ -4557,16 +4557,16 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.1.60(langchain@0.2.5)
+      '@langchain/core': 0.1.60(langchain@0.2.6)
       '@types/uuid': 9.0.8
       commander: 10.0.1
-      langchain: 0.2.5(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      langchain: 0.2.6(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
     dev: false
 
-  /langsmith@0.1.30(@langchain/core@0.2.5)(langchain@0.2.5):
+  /langsmith@0.1.30(@langchain/core@0.2.5)(langchain@0.2.6):
     resolution: {integrity: sha512-g8f10H1iiRjCweXJjgM3Y9xl6ApCa1OThDvc0BlSDLVrGVPy1on9wT39vAzYkeadC7oG48p7gfpGlYH3kLkJ9Q==}
     peerDependencies:
       '@langchain/core': '*'
@@ -4580,16 +4580,16 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.5(langchain@0.2.5)
+      '@langchain/core': 0.2.5(langchain@0.2.6)
       '@types/uuid': 9.0.8
       commander: 10.0.1
-      langchain: 0.2.5(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      langchain: 0.2.6(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
     dev: false
 
-  /langsmith@0.1.30(@langchain/core@0.2.5)(langchain@0.2.5)(openai@4.47.3):
+  /langsmith@0.1.30(@langchain/core@0.2.5)(langchain@0.2.6)(openai@4.47.3):
     resolution: {integrity: sha512-g8f10H1iiRjCweXJjgM3Y9xl6ApCa1OThDvc0BlSDLVrGVPy1on9wT39vAzYkeadC7oG48p7gfpGlYH3kLkJ9Q==}
     peerDependencies:
       '@langchain/core': '*'
@@ -4603,10 +4603,10 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.5(langchain@0.2.5)(openai@4.47.3)
+      '@langchain/core': 0.2.5(langchain@0.2.6)(openai@4.47.3)
       '@types/uuid': 9.0.8
       commander: 10.0.1
-      langchain: 0.2.5(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
+      langchain: 0.2.6(@aws-sdk/client-s3@3.600.0)(@pinecone-database/pinecone@2.2.2)(axios@1.7.2)(pdf-parse@1.1.1)
       openai: 4.47.3
       p-queue: 6.6.2
       p-retry: 4.6.2
