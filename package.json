@@ -26,7 +26,7 @@
     "drizzle-kit": "^0.22.7",
     "drizzle-orm": "^0.31.2",
     "framer-motion": "^11.2.11",
-    "langchain": "^0.2.5",
+    "langchain": "^0.2.6",
     "lucide-react": "^0.395.0",
     "md5": "^2.3.0",
     "next": "14.2.4",
