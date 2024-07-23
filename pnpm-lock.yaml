@@ -15,8 +15,8 @@ importers:
         specifier: ^3.616.0
         version: 3.616.0(@aws-sdk/client-sso-oidc@3.616.0(@aws-sdk/client-sts@3.616.0))(@aws-sdk/client-sts@3.616.0)
       '@aws-sdk/credential-providers':
-        specifier: ^3.616.0
-        version: 3.616.0(@aws-sdk/client-sso-oidc@3.616.0(@aws-sdk/client-sts@3.616.0))
+        specifier: ^3.617.0
+        version: 3.617.0(@aws-sdk/client-sso-oidc@3.616.0(@aws-sdk/client-sts@3.616.0))
       '@clerk/nextjs':
         specifier: ^5.2.4
         version: 5.2.4(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -228,8 +228,8 @@ packages:
     peerDependencies:
       '@aws-sdk/client-sts': ^3.609.0
 
-  '@aws-sdk/credential-providers@3.616.0':
-    resolution: {integrity: sha512-uyscpYV21lr24FNFu8ZkIKzOCD/xoysRci9HmShtKBY/FixwZRlLv7aUpqH7xcLd7sgsQwa2UD/7s9PKj/DXSg==}
+  '@aws-sdk/credential-providers@3.617.0':
+    resolution: {integrity: sha512-ZXzdnHI7Tfsk7Y2hezlhxFHlG2VM5tTWQPZ0qZ/cYCzZxyZfsmSFr/rMi6wJGB2J6ZDbbAohEoOWrEblHVq7Cw==}
     engines: {node: '>=16.0.0'}
 
   '@aws-sdk/middleware-bucket-endpoint@3.616.0':
@@ -3722,7 +3722,7 @@ snapshots:
       '@smithy/types': 3.3.0
       tslib: 2.6.2
 
-  '@aws-sdk/credential-providers@3.616.0(@aws-sdk/client-sso-oidc@3.616.0(@aws-sdk/client-sts@3.616.0))':
+  '@aws-sdk/credential-providers@3.617.0(@aws-sdk/client-sso-oidc@3.616.0(@aws-sdk/client-sts@3.616.0))':
     dependencies:
       '@aws-sdk/client-cognito-identity': 3.616.0
       '@aws-sdk/client-sso': 3.616.0
