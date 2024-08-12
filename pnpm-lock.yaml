@@ -60,8 +60,8 @@ importers:
         specifier: ^11.3.24
         version: 11.3.24(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       langchain:
-        specifier: ^0.2.13
-        version: 0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1)
+        specifier: ^0.2.15
+        version: 0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1)
       lucide-react:
         specifier: ^0.427.0
         version: 0.427.0(react@18.3.1)
@@ -2240,8 +2240,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  langchain@0.2.13:
-    resolution: {integrity: sha512-PQoDLEoFPyeqUE8YS+Eoxo8F+6ltNeJv/ijiNGp/eomHnVxHkqTXqc9/JK6bii6O/WryOClT7kVNPpVrMNNdzg==}
+  langchain@0.2.15:
+    resolution: {integrity: sha512-SW4YdRnNPNDRhu6vsxHhxwx+OhDcQsOuiQ/K5gzsUMXUkgbS+y8kG3Kjgs08MXgKAkT4IKW0f2/o1B+2n0Lubw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-s3': '*'
@@ -2477,10 +2477,6 @@ packages:
   lru-cache@10.2.0:
     resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
     engines: {node: 14 || >=16.14}
-
-  lru-cache@6.0.0:
-    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
-    engines: {node: '>=10'}
 
   lucide-react@0.427.0:
     resolution: {integrity: sha512-lv9s6c5BDF/ccuA0EgTdskTxIe11qpwBDmzRZHJAKtp8LTewAvDvOM+pTES9IpbBuTqkjiMhOmGpJ/CB+mKjFw==}
@@ -3009,11 +3005,6 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  semver@7.6.0:
-    resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   semver@7.6.3:
     resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
     engines: {node: '>=10'}
@@ -3336,9 +3327,6 @@ packages:
   xtend@4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
-
-  yallist@4.0.0:
-    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
   yaml@2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
@@ -4195,13 +4183,13 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@langchain/core@0.1.60(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))':
+  '@langchain/core@0.1.60(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))':
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.41(@langchain/core@0.1.60(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      langsmith: 0.1.41(@langchain/core@0.1.60(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -4213,13 +4201,13 @@ snapshots:
       - langchain
       - openai
 
-  '@langchain/core@0.2.21(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))':
+  '@langchain/core@0.2.21(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))':
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.41(@langchain/core@0.2.21(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      langsmith: 0.1.41(@langchain/core@0.2.21(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
       mustache: 4.2.0
       p-queue: 6.6.2
       p-retry: 4.6.2
@@ -4230,9 +4218,9 @@ snapshots:
       - langchain
       - openai
 
-  '@langchain/openai@0.1.1(encoding@0.1.13)(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))':
+  '@langchain/openai@0.1.1(encoding@0.1.13)(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))':
     dependencies:
-      '@langchain/core': 0.2.21(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      '@langchain/core': 0.2.21(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
       js-tiktoken: 1.0.12
       openai: 4.47.3(encoding@0.1.13)
       zod: 3.22.4
@@ -4241,9 +4229,9 @@ snapshots:
       - encoding
       - langchain
 
-  '@langchain/textsplitters@0.0.0(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))':
+  '@langchain/textsplitters@0.0.0(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))':
     dependencies:
-      '@langchain/core': 0.1.60(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      '@langchain/core': 0.1.60(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
       js-tiktoken: 1.0.12
     transitivePeerDependencies:
       - langchain
@@ -4835,7 +4823,7 @@ snapshots:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
-      semver: 7.6.0
+      semver: 7.6.3
       ts-api-utils: 1.2.1(typescript@5.5.4)
     optionalDependencies:
       typescript: 5.5.4
@@ -5979,16 +5967,16 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1):
+  langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1):
     dependencies:
-      '@langchain/core': 0.2.21(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
-      '@langchain/openai': 0.1.1(encoding@0.1.13)(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))
-      '@langchain/textsplitters': 0.0.0(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      '@langchain/core': 0.2.21(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      '@langchain/openai': 0.1.1(encoding@0.1.13)(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))
+      '@langchain/textsplitters': 0.0.0(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
       binary-extensions: 2.2.0
       js-tiktoken: 1.0.12
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
-      langsmith: 0.1.41(@langchain/core@0.2.21(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      langsmith: 0.1.41(@langchain/core@0.2.21(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
       openapi-types: 12.1.3
       p-retry: 4.6.2
       uuid: 10.0.0
@@ -6007,7 +5995,7 @@ snapshots:
       - encoding
       - openai
 
-  langsmith@0.1.41(@langchain/core@0.1.60(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)):
+  langsmith@0.1.41(@langchain/core@0.1.60(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)):
     dependencies:
       '@types/uuid': 9.0.8
       commander: 10.0.1
@@ -6016,11 +6004,11 @@ snapshots:
       semver: 7.6.3
       uuid: 9.0.1
     optionalDependencies:
-      '@langchain/core': 0.1.60(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
-      langchain: 0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1)
+      '@langchain/core': 0.1.60(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      langchain: 0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1)
       openai: 4.47.3(encoding@0.1.13)
 
-  langsmith@0.1.41(@langchain/core@0.2.21(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)):
+  langsmith@0.1.41(@langchain/core@0.2.21(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)))(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13)):
     dependencies:
       '@types/uuid': 9.0.8
       commander: 10.0.1
@@ -6029,8 +6017,8 @@ snapshots:
       semver: 7.6.3
       uuid: 9.0.1
     optionalDependencies:
-      '@langchain/core': 0.2.21(langchain@0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
-      langchain: 0.2.13(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1)
+      '@langchain/core': 0.2.21(langchain@0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1))(openai@4.47.3(encoding@0.1.13))
+      langchain: 0.2.15(@aws-sdk/client-s3@3.627.0)(@aws-sdk/credential-provider-node@3.624.0(@aws-sdk/client-sso-oidc@3.624.0(@aws-sdk/client-sts@3.624.0))(@aws-sdk/client-sts@3.624.0))(@pinecone-database/pinecone@3.0.0)(axios@1.7.3)(encoding@0.1.13)(fast-xml-parser@4.4.1)(ignore@5.3.1)(openai@4.47.3(encoding@0.1.13))(pdf-parse@1.1.1)
       openai: 4.47.3(encoding@0.1.13)
 
   language-subtag-registry@0.3.22: {}
@@ -6065,10 +6053,6 @@ snapshots:
       tslib: 2.6.2
 
   lru-cache@10.2.0: {}
-
-  lru-cache@6.0.0:
-    dependencies:
-      yallist: 4.0.0
 
   lucide-react@0.427.0(react@18.3.1):
     dependencies:
@@ -6583,10 +6567,6 @@ snapshots:
 
   semver@6.3.1: {}
 
-  semver@7.6.0:
-    dependencies:
-      lru-cache: 6.0.0
-
   semver@7.6.3: {}
 
   server-only@0.0.1: {}
@@ -6963,8 +6943,6 @@ snapshots:
   xmlbuilder@11.0.1: {}
 
   xtend@4.0.2: {}
-
-  yallist@4.0.0: {}
 
   yaml@2.3.4: {}
 
