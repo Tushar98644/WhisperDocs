@@ -36,8 +36,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       aws-sdk:
-        specifier: ^2.1678.0
-        version: 2.1678.0
+        specifier: ^2.1679.0
+        version: 2.1679.0
       axios:
         specifier: ^1.7.4
         version: 1.7.4
@@ -1340,8 +1340,8 @@ packages:
     resolution: {integrity: sha512-j1QzY8iPNPG4o4xmO3ptzpRxTciqD3MgEHtifP/YnJpIo58Xu+ne4BejlbkuaLfXn/nz6HFiw29bLpj2PNMdGg==}
     engines: {node: '>= 0.4'}
 
-  aws-sdk@2.1678.0:
-    resolution: {integrity: sha512-7+MNi7hholVrQYBu8bVbfzOBHxKlC63BfuxUwwMaUrFN1hok4pdB0QsEvL6YHwZtF+3Bq5zhONImnT2Q7W15yg==}
+  aws-sdk@2.1679.0:
+    resolution: {integrity: sha512-76zSe/U7+5hzyGD7KAs71of1r6tRhrq+tXsOYbCDKPVqqtjxQiy88n0AC0Tcjx29nQSegydyjHxg27YJlcCXOg==}
     engines: {node: '>= 10.0.0'}
 
   axe-core@4.7.0:
@@ -4979,7 +4979,7 @@ snapshots:
 
   available-typed-arrays@1.0.6: {}
 
-  aws-sdk@2.1678.0:
+  aws-sdk@2.1679.0:
     dependencies:
       buffer: 4.9.2
       events: 1.1.1
