@@ -18,7 +18,7 @@
     "@pinecone-database/pinecone": "^3.0.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.0",
-    "aws-sdk": "^2.1685.0",
+    "aws-sdk": "^2.1686.0",
     "axios": "^1.7.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
