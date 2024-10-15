@@ -12,7 +12,7 @@
     "@aws-sdk/client-s3": "^3.670.0",
     "@aws-sdk/credential-provider-ini": "^3.670.0",
     "@aws-sdk/credential-providers": "^3.670.0",
-    "@clerk/nextjs": "^5.7.2",
+    "@clerk/nextjs": "^5.7.3",
     "@neondatabase/serverless": "^0.10.1",
     "@pinecone-database/doc-splitter": "^0.0.1",
     "@pinecone-database/pinecone": "^3.0.3",
