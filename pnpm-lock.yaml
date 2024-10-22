@@ -60,8 +60,8 @@ importers:
         specifier: ^11.11.9
         version: 11.11.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       langchain:
-        specifier: ^0.3.2
-        version: 0.3.2(@langchain/core@0.2.21(openai@4.47.3(encoding@0.1.13)))(axios@1.7.7)(encoding@0.1.13)(openai@4.47.3(encoding@0.1.13))
+        specifier: ^0.3.3
+        version: 0.3.3(@langchain/core@0.2.21(openai@4.47.3(encoding@0.1.13)))(axios@1.7.7)(encoding@0.1.13)(openai@4.47.3(encoding@0.1.13))
       lucide-react:
         specifier: ^0.453.0
         version: 0.453.0(react@18.3.1)
@@ -2390,8 +2390,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  langchain@0.3.2:
-    resolution: {integrity: sha512-kd2kz1cS/PIVrLEDFlrZsAasQfPLbY1UqCZbRKa3/QcpB33/n6xPDvXSMfBuKhvNj0bjW6MXDR9HZTduXjJBgg==}
+  langchain@0.3.3:
+    resolution: {integrity: sha512-xy63PAh1PUuF2VdjLxacP8SeUQKF++ixvAhMhl/+3GkzloEKce41xlbQC3xNGVToYaqzIsDrueps/JU0zYYXHw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@langchain/anthropic': '*'
@@ -6306,7 +6306,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  langchain@0.3.2(@langchain/core@0.2.21(openai@4.47.3(encoding@0.1.13)))(axios@1.7.7)(encoding@0.1.13)(openai@4.47.3(encoding@0.1.13)):
+  langchain@0.3.3(@langchain/core@0.2.21(openai@4.47.3(encoding@0.1.13)))(axios@1.7.7)(encoding@0.1.13)(openai@4.47.3(encoding@0.1.13)):
     dependencies:
       '@langchain/core': 0.2.21(openai@4.47.3(encoding@0.1.13))
       '@langchain/openai': 0.1.1(encoding@0.1.13)
