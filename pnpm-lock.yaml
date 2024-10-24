@@ -27,8 +27,8 @@ importers:
         specifier: ^0.0.1
         version: 0.0.1
       '@pinecone-database/pinecone':
-        specifier: ^3.0.3
-        version: 3.0.3
+        specifier: ^4.0.0
+        version: 4.0.0
       '@radix-ui/react-slot':
         specifier: ^1.1.0
         version: 1.1.0(@types/react@18.3.12)(react@18.3.1)
@@ -967,8 +967,8 @@ packages:
     resolution: {integrity: sha512-UCJgNZKnXPcrTblI9ui6H+HbQbyYf8bsGQAGR3f4IYW2Lw1zQ0izFrjGsCgqiP+GE837JXv43+qgkSqwWlnZtA==}
     engines: {node: '>=14.0.0'}
 
-  '@pinecone-database/pinecone@3.0.3':
-    resolution: {integrity: sha512-0cAG0d/6knVZgVyXM1II4qG3dyOepLuAQsCXTOJomdA7iQxf+/Om9mq9Cw4QObr56oZ+lqtptlw5qz0BQaBX2Q==}
+  '@pinecone-database/pinecone@4.0.0':
+    resolution: {integrity: sha512-INYS+GBys9v5BRTyn0tv8srVsPTlSRvE3BPE4Wkc/lOEyAIyB9F7DEMXbeF19FOLEgRwCuHTLjzm1niENl+4FA==}
     engines: {node: '>=18.0.0'}
 
   '@pkgjs/parseargs@0.11.0':
@@ -4861,7 +4861,7 @@ snapshots:
 
   '@pinecone-database/doc-splitter@0.0.1': {}
 
-  '@pinecone-database/pinecone@3.0.3':
+  '@pinecone-database/pinecone@4.0.0':
     dependencies:
       encoding: 0.1.13
 
