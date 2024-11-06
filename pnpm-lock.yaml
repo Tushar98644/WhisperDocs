@@ -21,8 +21,8 @@ importers:
         specifier: ^6.2.0
         version: 6.2.0(next@15.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@neondatabase/serverless':
-        specifier: ^0.10.1
-        version: 0.10.1
+        specifier: ^0.10.2
+        version: 0.10.2
       '@pinecone-database/doc-splitter':
         specifier: ^0.0.1
         version: 0.0.1
@@ -55,7 +55,7 @@ importers:
         version: 0.27.1
       drizzle-orm:
         specifier: ^0.36.0
-        version: 0.36.0(@libsql/client-wasm@0.14.0)(@neondatabase/serverless@0.10.1)(@types/pg@8.11.6)(@types/react@18.3.12)(pg@8.13.1)(react@18.3.1)
+        version: 0.36.0(@libsql/client-wasm@0.14.0)(@neondatabase/serverless@0.10.2)(@types/pg@8.11.6)(@types/react@18.3.12)(pg@8.13.1)(react@18.3.1)
       framer-motion:
         specifier: ^11.11.11
         version: 11.11.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -827,8 +827,8 @@ packages:
   '@libsql/core@0.14.0':
     resolution: {integrity: sha512-nhbuXf7GP3PSZgdCY2Ecj8vz187ptHlZQ0VRc751oB2C1W8jQUXKKklvt7t1LJiUTQBVJuadF628eUk+3cRi4Q==}
 
-  '@neondatabase/serverless@0.10.1':
-    resolution: {integrity: sha512-Upn555uEYL/q8aqMdPSviggNWeeZLCl5FhCIs7A4hmshfoOAAfML+Sqbcxr+Re2WZN5+hpyM9JClImXnBuhuXw==}
+  '@neondatabase/serverless@0.10.2':
+    resolution: {integrity: sha512-XaIMQ9fXDPWLiShfsg+YJQvmMMIyVQB7J3jnirckyoDxN7YIATyzXBThpUeFJqBUkbFJQ0e5PCxXTpK2rG4WbQ==}
 
   '@next/env@15.0.2':
     resolution: {integrity: sha512-c0Zr0ModK5OX7D4ZV8Jt/wqoXtitLNPwUfG9zElCZztdaZyNVnN40rDXVZ/+FGuR4CcNV5AEfM6N8f+Ener7Dg==}
@@ -4445,7 +4445,7 @@ snapshots:
       js-base64: 3.7.7
     optional: true
 
-  '@neondatabase/serverless@0.10.1':
+  '@neondatabase/serverless@0.10.2':
     dependencies:
       '@types/pg': 8.11.6
 
@@ -5512,10 +5512,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.36.0(@libsql/client-wasm@0.14.0)(@neondatabase/serverless@0.10.1)(@types/pg@8.11.6)(@types/react@18.3.12)(pg@8.13.1)(react@18.3.1):
+  drizzle-orm@0.36.0(@libsql/client-wasm@0.14.0)(@neondatabase/serverless@0.10.2)(@types/pg@8.11.6)(@types/react@18.3.12)(pg@8.13.1)(react@18.3.1):
     optionalDependencies:
       '@libsql/client-wasm': 0.14.0
-      '@neondatabase/serverless': 0.10.1
+      '@neondatabase/serverless': 0.10.2
       '@types/pg': 8.11.6
       '@types/react': 18.3.12
       pg: 8.13.1
