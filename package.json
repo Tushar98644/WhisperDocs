@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.687.0",
-    "@aws-sdk/credential-provider-ini": "^3.682.0",
+    "@aws-sdk/credential-provider-ini": "^3.687.0",
     "@aws-sdk/credential-providers": "^3.686.0",
     "@clerk/nextjs": "^6.2.1",
     "@neondatabase/serverless": "^0.10.3",
