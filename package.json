@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.693.0",
+    "@aws-sdk/client-s3": "^3.696.0",
     "@aws-sdk/credential-provider-ini": "^3.693.0",
     "@aws-sdk/credential-providers": "^3.693.0",
     "@clerk/nextjs": "^6.4.0",
